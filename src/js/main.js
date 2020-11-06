@@ -30,9 +30,7 @@ function mappingMenu() {
 
 $('.collapse').click(function (e) {
     e.preventDefault();
-    $(this).removeClass('click');
-	$('.block_collapse').toggleClass("show");
-	
+	$(".collapse").removeClass('click');
     var $this = $(this);
     if ($this.next().hasClass('show')) {
         $this.next().removeClass('show');

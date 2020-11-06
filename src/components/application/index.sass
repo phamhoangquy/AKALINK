@@ -4,14 +4,18 @@
 		display: flex
 		list-style: none
 		justify-content: center
+		@media screen and ( max-width: 470px )
+			justify-content: start
+			overflow-x: auto
 		li
 			a
-				width: 180px
-				height: 60px
+				width: 18rem
+				height: 6rem
+				font-size: 1.6rem
 				color: #185ece
 				background-color: #e7eefa
 				display: block
-				margin: 4px 2px
+				margin: 0.4rem 0.2rem
 				@include center
 				transition: 0.2s all
 				&:hover
@@ -22,36 +26,69 @@
 					background-color: #185ece
 					color: #fff
 .block_application-app
+	padding: 10rem 0
+	.block-img
+		position: relative
+		width: 61.8em
+		height: 61.8em
+		font-size: 10px
+		@media screen and ( max-width: 1300px )
+			font-size: 8px
+		@media screen and ( max-width: 576px )
+			font-size: 5px
+		.big-img, .medium-img, .small-img
+			position: absolute
+			border-radius: 50%
+			overflow: hidden
+			img
+				width: 100%
+				height: 100%
+				object-fit: contain
+		.big-img
+			width: 45.8em
+			height: 45.8em
+			top: 6em
+			left: 16em
+		.medium-img
+			width: 16.5em
+			height: 16.5em
+			top: 5.7em
+			left: 0
+		.small-img
+			width: 13.4em
+			height: 13.4em
+			left: 0
+			top: 23em
 	.title
 		h1
-			font-size: 36px
+			font-size: 3.6rem
 			line-height: 1.2
-			padding-bottom: 25px
+			padding-bottom: 2.5rem
 			position: relative
 			&::before
 				content: ""
 				position: absolute
-				width: 50px
-				height: 2px
+				width: 5rem
+				height: 0.2rem
 				background-color: #185ece
 				bottom: 0
 	.block_collapse
-		width: 600px
+		width: 100%
 		list-style: none
 		border-radius: 10px 10px 10px 10px
 		overflow: hidden
-		&.show
-			box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1)
+		@media screen and ( max-width: 1280px )
+			width: 100%
 		li
-			padding-top: 30px
+			margin-top: 3rem
 			.collapse
 				width: 100%
-				height: 60px
+				height: 6rem
 				display: flex
 				align-items: center
 				justify-content: space-between
-				padding: 0 30px
-				font-size: 12px
+				padding: 0 3rem
+				font-size: 1.2rem
 				background-color: #e7eefa
 				transition: 0.2s all
 				border-radius: 10px 10px 10px 10px
@@ -65,7 +102,7 @@
 				i
 					color: #185ece
 					transition: 0.2s all
-					font-size: 30px
+					font-size: 3rem
 				&.click
 					background-color: #185ece
 					border-radius: 10px 10px 0 0
@@ -74,11 +111,12 @@
 					i
 						color: #fff
 						transform: rotate(180deg)
-
+				@media screen and ( max-width: 576px )
+					padding: 0 1.5rem
 			.collapse-inner
 				overflow: hidden
 				display: none
-				padding: 10px 30px 30px 30px
+				padding: 1rem 3rem 3rem 3rem
 				list-style: none
 				li
 					position: relative
@@ -91,5 +129,97 @@
 						position: absolute
 						top: 0
 						left: 0
+						font-size: 1.6rem
 				p
 					margin: 10px 0
+					font-size: 1.6rem
+.block_personnel-activities, .block_remote-working
+	background-image: url("../img/app/bg-2.png")
+	background-position: top
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 8.5rem 0
+	.block_option
+		width: 100%
+		display: flex
+		justify-content: center
+		ul
+			display: flex
+			list-style: none
+			justify-content: space-between
+			width: 60rem
+			font-size: 10px
+			@media screen and ( max-width: 576px )
+				font-size: 6px
+			li
+				.option-img
+					width: 10em
+					height: 10em
+					border-radius: 50%
+					padding: 2em
+					overflow: hidden
+					border: 1px solid #e4e4e4
+					@include center
+					&:hover
+						background-color: #dfe8f5
+					img
+						width: 100%
+						height: 100%
+						object-fit: contain
+				.content
+					p
+						text-align: center
+						font-size: 2rem
+						color: #185ece
+						font-weight: 700
+						padding: 1rem 0
+	.block_content
+		padding-top: 10rem
+		h3
+			font-size: 3rem
+			color: #185ece
+			font-weight: 700
+		.content
+			list-style: none
+			padding: 1rem 0
+			li
+				position: relative
+				padding-left: 2.5rem
+				&:before
+					content: "\eb80"
+					font-family: 'remixicon'
+					color: #185ece
+					position: absolute
+					top: 0
+					left: 0
+					font-size: 1.6rem
+					@media screen and ( max-width: 576px )
+						top: 3px
+						
+	.block_img
+		width: 48rem
+		height: 48rem
+		border-radius: 50%
+		overflow: hidden
+		margin-top: 3rem
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			background-image: url("../img/app/bg-big-img.png")
+			background-position: top
+			background-repeat: no-repeat
+			background-size: cover
+			
+		img
+			width: 100%
+			height: 100%
+			object-fit: contain
+.block_remote-working
+	background-image: unset
+.df_jc-center
+	display: flex
+	justify-content: center
+	padding-bottom: 2rem
