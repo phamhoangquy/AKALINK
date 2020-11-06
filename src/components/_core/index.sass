@@ -1,0 +1,170 @@
+.block-title
+	padding-bottom: 15px
+	.head-title
+		h1
+			font-size: 3.6rem
+			line-height: 1.2
+			padding-bottom: 2.5rem
+			position: relative
+			&::before
+				content: ""
+				position: absolute
+				width: 5rem
+				height: 0.2rem
+				background-color: #185ece
+				bottom: 0
+	.title
+		h2
+			font-size: 4.8rem
+			color: #111111
+			flex-wrap: 700
+			text-align: center
+	.content
+		p
+			font-size: 2.4rem
+			color: #111111
+			font-weight: 500
+			text-align: center
+			position: relative
+			padding-bottom: 8rem
+			&::before
+				content: ""
+				position: absolute
+				width: 5rem
+				height: 0.2rem
+				background-color: #185ece
+				top: 7rem
+				left: 50%
+				transform: translate(-50%, -50%)
+.df_jc-center
+	display: flex
+	justify-content: center
+.red
+	background-color: red
+
+
+.link-to-section
+	ul
+		list-style-type: none
+		padding: 0
+		li
+			display: inline-block
+			&:not(:last-child)
+				margin-right: 10px
+			&.active
+				a
+					color: #0b6528
+					text-decoration: underline
+			a
+				display: inline-block
+				padding: 10px 0
+				font-weight: 600
+				color: #333333
+
+.tab-wrapper
+	.tab-item
+		display: none
+		&.active
+			display: block
+
+.tab-wrapper-2
+	.tab-item-2
+		display: none
+		&.active
+			display: block
+
+.tab-wrapper-3
+	.tab-item-3
+		display: none
+		&.active
+			display: block
+
+.lcl
+	overflow: hidden
+	display: -webkit-box
+	text-overflow: ellipsis
+	-webkit-box-orient: vertical
+
+	&-1 
+		-webkit-line-clamp: 1
+
+	&-2 
+		-webkit-line-clamp: 2
+
+	&-3 
+		-webkit-line-clamp: 3
+
+	&-4
+		-webkit-line-clamp: 4
+
+// .dekstop 
+// 	@media (max-width: 1025px) 
+// 		display: none !important
+
+.zoom-in
+	overflow: hidden
+	transition: .3s all ease-in-out
+	&:hover
+		img
+			transform: scale(1.13)
+	img
+		transform: scale(1)
+		transition: .3s all ease-in-out
+.opacity
+	transition: .3s all ease-in-out
+	&:hover
+		opacity: .7
+	img
+		opacity: 1
+		transition: .3s all ease-in-out
+.flash
+	transition: .3s all ease-in-out
+	&:hover
+		img
+			opacity: 1
+			animation: flash 1.5s
+
+@-webkit-keyframes flash
+	0%
+		opacity: .4
+
+	100%
+		opacity: 1
+
+
+@keyframes flash
+	0%
+		opacity: .4
+
+	100%
+		opacity: 1
+
+
+.head_application-first
+	// padding: 20px 0
+	// padding-bottom: 100px
+	ul
+		display: flex
+		list-style: none
+		justify-content: center
+		@media screen and ( max-width: 470px )
+			justify-content: start
+			overflow-x: auto
+		li
+			a
+				width: 18rem
+				height: 6rem
+				font-size: 1.6rem
+				color: #185ece
+				background-color: #e7eefa
+				display: block
+				margin: 0.4rem 0.2rem
+				@include center
+				transition: 0.2s all
+				&:hover
+					background-color: #185ece
+					color: #fff
+			&.active
+				a
+					background-color: #185ece
+					color: #fff
