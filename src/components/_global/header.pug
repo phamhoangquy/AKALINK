@@ -1,0 +1,39 @@
+header
+	.container
+		.header
+			.block_left
+				.logo
+					img(src="img/header/logo.png", alt="")
+				.nav-wrapper
+					ul.nav-menu
+						li
+							a(href="") Tính năng
+						li
+							a(href="application.html") Ứng dụng
+						li
+							a(href="") Tin tức
+			.block_right
+				.block_search
+					.search
+						i.material-icons search
+					form(action="").box_search
+						input(type='text' placeholder="Tìm kiếm...")
+						button(type="submit") 
+							i.material-icons search
+						.btn-close
+							i.ri-close-line
+				.language
+					a VN
+					ul
+						li
+							a EN
+				a(href="").btn-trial
+					i.material-icons send
+					span Dùng thử
+				.moblie-toggle
+					span.btn-bars.ri-menu-line
+	.menu_mobile
+		.moblie-toggle
+			span.btn-bars.ri-close-line
+		.mobile-wrapper
+	.overlay

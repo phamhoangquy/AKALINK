@@ -1,0 +1,95 @@
+.block_application-first
+	// padding: 20px 0
+	ul
+		display: flex
+		list-style: none
+		justify-content: center
+		li
+			a
+				width: 180px
+				height: 60px
+				color: #185ece
+				background-color: #e7eefa
+				display: block
+				margin: 4px 2px
+				@include center
+				transition: 0.2s all
+				&:hover
+					background-color: #185ece
+					color: #fff
+			&.active
+				a
+					background-color: #185ece
+					color: #fff
+.block_application-app
+	.title
+		h1
+			font-size: 36px
+			line-height: 1.2
+			padding-bottom: 25px
+			position: relative
+			&::before
+				content: ""
+				position: absolute
+				width: 50px
+				height: 2px
+				background-color: #185ece
+				bottom: 0
+	.block_collapse
+		width: 600px
+		list-style: none
+		border-radius: 10px 10px 10px 10px
+		overflow: hidden
+		&.show
+			box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1)
+		li
+			padding-top: 30px
+			.collapse
+				width: 100%
+				height: 60px
+				display: flex
+				align-items: center
+				justify-content: space-between
+				padding: 0 30px
+				font-size: 12px
+				background-color: #e7eefa
+				transition: 0.2s all
+				border-radius: 10px 10px 10px 10px
+				cursor: pointer
+				&:hover
+					color: #347227
+				a
+					color: #185ece
+					font-size: 2rem
+					font-weight: 500
+				i
+					color: #185ece
+					transition: 0.2s all
+					font-size: 30px
+				&.click
+					background-color: #185ece
+					border-radius: 10px 10px 0 0
+					a
+						color: #fff
+					i
+						color: #fff
+						transform: rotate(180deg)
+
+			.collapse-inner
+				overflow: hidden
+				display: none
+				padding: 10px 30px 30px 30px
+				list-style: none
+				li
+					position: relative
+					padding: 0
+					padding-left: 25px
+					&:before
+						content: "\eb80"
+						font-family: 'remixicon'
+						color: #185ece
+						position: absolute
+						top: 0
+						left: 0
+				p
+					margin: 10px 0

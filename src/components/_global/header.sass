@@ -1,0 +1,227 @@
+header
+	box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05)
+	.header
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 80px
+		@media screen and ( max-width: 1280px )
+			height: 60px
+		.block_left
+			display: flex
+			.logo
+				width: 196px
+				height: auto
+				img
+					width: 100%
+				@media screen and ( max-width: 1280px )
+					width: 120px
+				@media screen and ( max-width: 576px )
+					width: 100px
+		.block_right
+			display: flex
+			align-items: center
+			.block_search
+				position: relative
+				.search
+					display: flex
+					align-items: center
+					cursor: pointer
+					i
+						font-size: 1.8rem
+						color: #111111
+						&:hover
+							color: #185ece
+				.box_search
+					position: absolute
+					top: 30px
+					right: 0
+					width: 250px
+					height: 40px
+					display: flex
+					opacity: 0
+					visibility: hidden
+					transition: 0.2s all
+					&.show
+						top: 38px
+						opacity: 1
+						visibility: visible
+					input
+						width: 170px
+						padding: 0 10px
+						border: 2px solid #185ece
+						border-right: 0
+						&::placeholder
+							font-size: 14px
+					button
+						width: 40px
+						border: 0
+						@include center
+						background-color: #185ece
+						i
+							color: #fff
+						&:hover
+							background-color: #e7edfb
+							border: 2px solid #185ece
+							i, span
+								color: #185ece
+					.btn-close
+						width: 40px
+						border: 0
+						@include center
+						background-color: #e7edfb
+						cursor: pointer
+						i
+							color: #185ece
+					@media screen and ( max-width: 576px )
+						right: -136px
+			.language
+				display: flex
+				align-items: center
+				padding: 0 20px
+				position: relative
+				font-size: 1.4rem
+				cursor: pointer
+				&::before
+					content: '|'
+					color: #959595
+					position: absolute
+					top: 0
+					left: 6px
+				&:hover
+					ul
+						display: unset
+				ul
+					display: none
+					list-style: none
+					position: absolute
+					top: 20px
+					right: 15px
+					li
+						background-color: #fff
+						box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.1)
+						a
+							padding: 5px
+				@media screen and ( max-width: 576px )
+					&:before
+						left: 3px
+			.btn-trial
+				width: 20rem
+				height: 4rem
+				background-color: #185ece
+				@include center
+				transition: 0.2s all
+				i
+					padding-right: 10px
+					font-size: 1.8rem
+					color: #fff
+				span
+					color: #fff
+					font-weight: 500
+					text-transform: uppercase
+					font-size: 1.4rem
+				&:hover
+					background-color: #e7edfb
+					i, span
+						color: #185ece
+				@media screen and ( max-width: 567px )
+					width: 100px
+			.moblie-toggle
+				width: 32px
+				height: 32px
+				background-color: #185ece
+				margin-left: 10px
+				cursor: pointer
+				display: none
+				.btn-bars
+					color: #fff
+				&:active
+					background-color: #e7edfb
+					.btn-bars
+						color: #185ece
+				@media screen and ( max-width: 1280px )
+					@include center
+				@media screen and ( max-width: 576px )
+					margin-left: 5px
+	.nav-menu
+		display: flex
+		align-items: center
+		height: 100%
+		list-style: none
+		li
+			padding-left: 60px
+			a
+				font-size: 18px
+				color: #111111
+				padding: 5px 0
+				position: relative
+				&:after
+					position: absolute
+					bottom: 0
+					left: 0
+					right: 0
+					width: 0%
+					content: ''
+					background: #185ece
+					height: 1.5px
+					transition: all .2s
+				&:hover
+					color: #185ece
+					&:after
+						width: 100%
+		@media screen and ( max-width: 1280px )
+			display: block
+			height: unset
+			li
+				padding: 10px 0
+				text-align: center
+	.menu_mobile
+		width: 70%
+		height: 100%
+		background-color: #fefefe
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 5
+		padding: 30px
+		opacity: 0
+		pointer-events: none
+		transform: translateX(20%)
+		transition: all .5s cubic-bezier(.68,-.55,.265,1.55)
+		.moblie-toggle
+			position: absolute
+			top: 0
+			right: 0
+			width: 32px
+			height: 32px
+			background-color: #185ece
+			@include center
+			cursor: pointer
+			.btn-bars
+				color: #fff
+			&:active
+				background-color: #e7edfb
+				.btn-bars
+					color: #185ece
+		.mobile-wrapper
+			display: flex
+			flex-direction: column
+			align-items: center
+			width: 100%
+			height: 100%
+			justify-content: center
+	.menu_mobile.show
+		opacity: 1
+		pointer-events: auto
+		background: #ffffff
+		transform: translateX(0)
+	.overlay
+		position: fixed
+		display: none
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		background-color: rgba(0,0,0,0.5)
+	.overlay.show
+		display: block

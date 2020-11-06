@@ -22,6 +22,7 @@
         "src/_plugins/grid.css",
         "src/_plugins/remixicon.css",
         "bower_components/swiper/dist/css/swiper.css",
-        "bower_components/fancybox/dist/jquery.fancybox.css"
+        "bower_components/fancybox/dist/jquery.fancybox.css",
+        "bower_components/mdi/css/materialdesignicons.min.css"
     ]
 }
