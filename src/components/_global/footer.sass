@@ -1,0 +1,212 @@
+footer
+	background-image: url('../img/bg-footer.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	margin-left: auto
+	.footer-top
+		padding: 90px 0 0 0
+		.row
+			margin-bottom: 0
+			> *
+				margin-bottom: 0
+			.border-left-white
+				border-left: 1px solid rgba(#fff , 0.25)
+		.footer-link
+			width: 100%
+			height: 70px
+			@media screen and ( max-width: 576px )
+				margin-bottom: 30px
+			a
+				color: #fff
+				display: inline-flex
+				align-items: center
+				.news-footer
+					p
+						font-size: 18px
+						color: #333333
+						padding-left: 30px
+						@media screen and ( max-width: 576px )
+							font-size: 16px
+			.subscribe
+				.subscribefrm
+					display: flex
+					@media screen and ( max-width: 576px )
+						display: block
+					input
+						padding-left: 20px
+						height: 60px
+						width: 375px
+						color: #333
+						border: none
+						border-radius: 10px 0 0 10px
+						background: #ffffff
+						transition: .3s all ease-in-out
+						&:focus
+							outline: none
+							box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
+						@media screen and ( max-width: 576px )
+							width: 100%
+							border-radius: 10px
+					button
+						color: #ffffff
+						background: #185ece
+						cursor: pointer
+						font-size: 18px
+						text-align: center
+						border: none
+						width: 125px
+						height: 60px
+						margin-left: -5px
+						border-radius: 0 10px 10px 0
+						&:nth-last-child(2)
+							display: none
+						&:focus
+							outline: none
+						// &:hover
+						// 	background: #111111
+						// 	color: #ffffff
+						@media screen and ( max-width: 576px )
+							border-radius: 10px
+							margin-left: 5px
+							margin-top: 20px
+						
+			
+
+	.footer-block
+		position: relative
+		padding-top: 70px
+		.row
+			border-top: 1px solid #e1e6eb
+			border-bottom: 1px solid #e1e6eb
+		.footer-logo
+			@media screen and ( max-width: 1199px )
+				padding-top: 30px
+			@media screen and ( max-width: 1024.98px )
+				padding-top: 30px
+			.img
+				img
+					width: 100%
+					height: 100%
+					object-fit: scale-down
+					@media screen and ( max-width: 1199px )
+						width: auto
+					@media screen and ( max-width: 1024.98px )
+						width: auto
+					@media screen and ( max-width: 576px )
+						width: auto
+		.footer-card
+			padding-top: 60px
+			&:first-child
+				padding-top: 0
+			@media screen and ( max-width: 1024.98px )
+				padding-bottom: 0
+			&.pr-40
+				padding-right: 39px
+			.card__title
+				padding-bottom: 15px
+				h4
+					font-size: 18px
+					color: #333333
+					text-transform: uppercase
+				@media screen and (max-width: 768px)
+					padding-bottom: 15px
+					h2
+						font-size: 14px
+			.card__body
+				ul
+					padding: 0
+					list-style: none
+					li
+						display: flex
+						align-items: flex-start
+						padding-bottom: 10px
+						span
+							i
+								font-size: 16px
+								color: #333333
+						p
+							font-size: 16px
+							color: #333333
+							padding-left: 10px
+			.card__body_2
+				ul
+					padding: 0
+					list-style: none
+					li
+						display: flex
+						align-items: flex-start
+						border-bottom: 1px solid #e1e6eb
+						padding-top: 10px
+						&:first-child
+							padding-top: 0
+						p
+							color: #1354bc
+							font-size: 16px
+							padding-bottom: 10px
+						a
+							color: #1354bc
+							font-size: 16px
+							padding-bottom: 10px
+						&:first-child
+							p
+								margin-bottom: 25px
+							@media screen and ( max-width:  576px)
+								p 
+									margin-bottom: 0
+					.contact-link
+						border-bottom: 0
+						.item-link
+							display: flex
+							border-bottom: 0
+							li
+								padding-right: 10px
+								border-bottom: 0
+								&:first-child
+									padding-top: 10px
+								a
+									border-radius: 50%
+									background: #ffffff
+									width: 40px
+									height: 40px
+									text-align: center
+									justify-content: center
+									align-items: center
+									padding: 5px
+									i
+										color: #999999
+										font-size: 18px
+			@media screen and ( max-width:  1199px)
+				padding-left: 15px
+			@media screen and ( max-width:  575px)
+				padding: 15px
+
+	.footer-copyright
+		padding: 20px 0 60px 0
+		@media screen and ( max-width: 576px )
+			padding: 20px 0 30px 0
+		.copyright-wrapper
+			display: flex
+			justify-content: space-between
+			@media screen and ( max-width: 576px )
+				justify-content: center
+			.copy-left
+				p
+					font-size: 12px
+					color: #333333
+
+			.copy-right
+				ul
+					display: flex
+					list-style: none
+					padding: 0
+					li
+						padding-right: 10px
+						position: relative
+						&:last-child
+							&::before
+								content: "|"
+								padding-right: 10px
+						a
+							font-size: 12px 
+							color: #333333
