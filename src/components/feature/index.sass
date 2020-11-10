@@ -1,0 +1,262 @@
+.block_feature-header
+	.block_feature-first
+		ul
+			display: flex
+			list-style: none
+			justify-content: space-between
+			width: 100%
+			@media screen and ( max-width: 1440px )
+				overflow-x: auto
+				&::-webkit-scrollbar
+					height: 0
+				&::-webkit-scrollbar-track
+					background-color: #dedede
+				&::-webkit-scrollbar-thumb
+					background-color: #185ece
+				&:hover::-webkit-scrollbar
+					height: 1.2rem
+			li
+				&:first-child
+					a
+						margin-left: 0
+				&:last-child
+					a
+						margin-right: 0		
+				a
+					width: 15.25rem
+					height: 6rem
+					font-size: 1.6rem
+					color: #185ece
+					background-color: #e7eefa
+					margin: 0.4rem 0.2rem
+					padding: 0 3rem
+					@include center
+					transition: 0.2s all
+					text-align: center
+					&:hover
+						background-color: #185ece
+						color: #fff
+				&.active
+					a
+						background-color: #185ece
+						color: #fff
+.block_feature-1
+	padding: 10rem 0
+	.row
+		&:nth-child(2n+1)
+			.col-xl-6
+				&:nth-child(2n+1)
+					display: flex
+					justify-content: center
+				&:nth-child(2n)
+					display: flex
+					flex-direction: column
+					justify-content: center
+					@media screen and ( max-width: 1023.98px )
+						padding-top: 10rem
+						align-items: center
+	.block_content
+		h3
+			font-size: 3rem
+			color: #185ece
+			font-weight: 700
+		.content
+			list-style: none
+			padding: 1rem 0
+			li
+				position: relative
+				padding-left: 2.5rem
+				&:before
+					content: "\eb80"
+					font-family: 'remixicon'
+					color: #185ece
+					position: absolute
+					top: 0
+					left: 0
+					font-size: 1.6rem
+					@media screen and ( max-width: 576px )
+						top: 3px
+	.background
+		position: relative
+		.img 
+			position: absolute
+			top: -3rem
+			left: 5rem
+			pointer-events: none
+			img
+				width: auto
+				@media screen and ( max-width: 1199px )
+					width: 440px
+				@media screen and ( max-width: 1024.98px )
+					width: 400px
+				@media screen and ( max-width: 576px )
+					width: 400px
+		.phone
+			position: absolute
+			top: 2rem
+			left: 8rem
+			pointer-events: none
+			z-index: 2
+			width: 42rem
+			@media screen and ( max-width: 765px )
+				width: 30rem
+				height: 30rem
+			img
+				width: 100%
+	.block_img
+		width: 48rem
+		height: 48rem
+		border-radius: 50%
+		overflow: hidden
+		margin-top: 3rem
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			background-image: url("../img/app/bg-big-img.png")
+			background-position: top
+			background-repeat: no-repeat
+			background-size: cover
+		@media screen and ( max-width: 1024.98px )
+			width: 40rem
+			height: 40rem
+		img
+			width: 100%
+			height: 100%
+			object-fit: contain
+.block_feature-2, .block_feature-3, .block_feature-4
+	background-image: url("../img/feature/bg-1.png")
+	background-position: top
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 10rem 0
+	.row
+		padding: 8rem 0
+		&:nth-child(2n+1)
+			.col-xl-6
+				&:nth-child(2n+1)
+					display: flex
+					flex-direction: column
+					justify-content: center
+					.block-title
+						padding-left: 12rem
+					.block_content
+						padding-left: 12rem
+					@media screen and ( max-width: 1023.98px )
+						align-items: center
+						.block-title
+							padding-left: 0
+						.block_content
+							padding: 0 10rem
+					@media screen and ( max-width: 576px )
+						.block_content
+							padding: 0
+				&:nth-child(2n)
+					display: flex
+					justify-content: center
+					@media screen and ( max-width: 1023.98px )
+						padding-top: 10rem
+		&:nth-child(2n)
+			.col-xl-6
+				&:nth-child(2n+1)
+					order: 2
+					display: flex
+					flex-direction: column
+					justify-content: center
+					.block_content
+						padding-right: 12rem
+					@media screen and ( max-width: 1023.98px )
+						order: unset
+						align-items: center
+						.block_content
+							padding-right: 0
+						.block_content
+							padding: 0 10rem
+					@media screen and ( max-width: 576px )
+						.block_content
+							padding: 0
+				&:nth-child(2n)
+					@media screen and ( max-width: 1023.98px )
+						padding-top: 10rem
+						display: flex
+						justify-content: center
+
+		.block_content
+			h3
+				font-size: 3rem
+				color: #185ece
+				font-weight: 700
+			.content
+				list-style: none
+				li
+					position: relative
+					padding-left: 2.5rem
+					&:before
+						content: "\eb80"
+						font-family: 'remixicon'
+						color: #185ece
+						position: absolute
+						top: 0
+						left: 0
+						font-size: 1.6rem
+						@media screen and ( max-width: 576px )
+							top: 3px
+		.background
+			position: relative
+			.img 
+				position: absolute
+				top: -3rem
+				left: 5rem
+				pointer-events: none
+				img
+					width: auto
+					@media screen and ( max-width: 1199px )
+						width: 440px
+					@media screen and ( max-width: 1024.98px )
+						width: 400px
+					@media screen and ( max-width: 576px )
+						width: 400px
+			.phone
+				position: absolute
+				top: -6rem
+				left: 25rem
+				pointer-events: none
+				z-index: 2
+				width: 30rem
+				@media screen and ( max-width: 1024.98px )
+					width: 25rem
+					left: 20rem
+				img
+					width: 100%
+		.block_img
+			width: 48rem
+			height: 48rem
+			border-radius: 50%
+			overflow: hidden
+			margin-top: 3rem
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				background-image: url("../img/app/bg-big-img.png")
+				background-position: top
+				background-repeat: no-repeat
+				background-size: cover
+			@media screen and ( max-width: 1024.98px )
+				width: 40rem
+				height: 40rem
+			img
+				width: 100%
+				height: 100%
+				object-fit: contain
+
+.block_feature-3
+	background-image: url("../img/feature/bg-2.png")
+	background-position: bottom
+.block_feature-4
+	background-image: url("../img/feature/bg-3.png")
+	background-position: center
