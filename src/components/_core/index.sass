@@ -140,31 +140,35 @@
 		opacity: 1
 
 
-.head_application-first
+.block_head-menu
 	// padding: 20px 0
 	// padding-bottom: 100px
-	ul
+	.head-menu-zone
+		overflow-x: auto
 		display: flex
-		list-style: none
-		justify-content: center
-		@media screen and ( max-width: 470px )
-			justify-content: start
-			overflow-x: auto
-		li
-			a
-				width: 18rem
-				height: 6rem
-				font-size: 1.6rem
-				color: #185ece
-				background-color: #e7eefa
-				display: block
-				margin: 0.4rem 0.2rem
-				@include center
-				transition: 0.2s all
-				&:hover
-					background-color: #185ece
-					color: #fff
-			&.active
+		ul
+			display: flex
+			list-style: none
+			justify-content: center
+			// @media screen and ( max-width: 470px )
+			// 	justify-content: start
+			// 	overflow-x: auto
+
+			li
 				a
-					background-color: #185ece
-					color: #fff
+					width: 18rem
+					height: 6rem
+					font-size: 1.6rem
+					color: #185ece
+					background-color: #e7eefa
+					display: block
+					margin: 0.4rem 0.2rem
+					@include center
+					transition: 0.2s all
+					&:hover
+						background-color: #185ece
+						color: #fff
+				&.active
+					a
+						background-color: #185ece
+						color: #fff

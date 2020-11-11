@@ -1,0 +1,652 @@
+// section 1
+.block_feature-1
+	padding: 10rem 0
+	@media screen and ( max-width: 1024.98px )
+		padding: 10rem 0 0 0
+	@media screen and ( max-width: 576px )
+		padding: 10rem 0 0 0
+	.row
+		&:nth-child(2n+1)
+			.col-xl-6
+				&:nth-child(2n+1)
+					@media screen and ( max-width: 1023.98px )
+						display: flex
+						justify-content: center
+				&:nth-child(2n)
+					display: flex
+					flex-direction: column
+					justify-content: center
+					@media screen and ( max-width: 1023.98px )
+						padding-top: 10rem
+						align-items: center
+	.big-item
+		padding-right: 12rem
+		@media screen and ( max-width: 1024.98px )
+			padding-right: 0
+		@media screen and ( max-width: 576px )
+			padding-right: 0
+		.block_content
+			h3
+				font-size: 3rem
+				color: #185ece
+				font-weight: 700
+			.content
+				list-style: none
+				padding: 1rem 0
+				li
+					position: relative
+					padding-left: 2.5rem
+					&:before
+						content: "\eb80"
+						font-family: 'remixicon'
+						color: #185ece
+						position: absolute
+						top: 0
+						left: 0
+						font-size: 1.6rem
+						@media screen and ( max-width: 576px )
+							top: 3px
+	.background
+		position: relative
+		.img 
+			position: absolute
+			top: -3rem
+			left: 0
+			pointer-events: none
+			user-select: none
+			img
+				width: auto
+				@media screen and ( max-width: 1199px )
+					width: 440px
+				@media screen and ( max-width: 1024.98px )
+					width: 400px
+				@media screen and ( max-width: 576px )
+					width: 400px
+		.phone
+			position: absolute
+			top: 2rem
+			left: 5rem
+			pointer-events: none
+			user-select: none
+			z-index: 2
+			width: 42rem
+			@media screen and ( max-width: 1024.98px )
+				left: 0
+			@media screen and ( max-width: 765px )
+				width: 35rem
+				height: 35rem
+			img
+				width: 100%
+		.media
+			position: absolute
+			pointer-events: auto
+			user-select: auto
+			top: 50%
+			right: -15rem
+			transform: translate(-50%,-50%)
+			z-index: 5
+			img
+				width: 100%
+			@media screen and ( max-width: 765px )
+				right: -20rem
+				img
+					width: 70%
+			@media screen and ( max-width: 576px )
+				right: 0
+	.block_img
+		width: 48rem
+		height: 48rem
+		border-radius: 50%
+		overflow: hidden
+		margin-top: 3rem
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			background-image: url("../img/app/bg-big-img.png")
+			background-position: top
+			background-repeat: no-repeat
+			background-size: cover
+		@media screen and ( max-width: 1024.98px )
+			width: 40rem
+			height: 40rem
+		img
+			width: 100%
+			height: 100%
+			object-fit: contain
+
+// section 2
+.block_feature-2
+	background-image: url("../img/feature/bg-1.png")
+	background-position: top
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 10rem 0
+	@media screen and ( max-width: 576px )
+		padding: 5rem 0
+	.row
+		&:nth-child(2n+1)
+			.col-xl-6
+				&:nth-child(2n+1)
+					display: flex
+					flex-direction: column
+					justify-content: center
+					.big-item
+						padding-left: 12rem
+					@media screen and ( max-width: 1024.98px )
+						.big-item
+							padding-left: 0
+					@media screen and ( max-width: 1023.98px )
+						align-items: left
+						.block-title
+							padding-left: 0
+						.big-item
+							padding: 0 10rem
+					@media screen and ( max-width: 576px )
+						order: 1
+						.big-item
+							padding: 0
+				&:nth-child(2n)
+					display: flex
+					justify-content: center
+					@media screen and ( max-width: 1023.98px )
+						padding-bottom: 3rem
+						padding-top: 10rem
+		&:nth-child(2n)
+			@media screen and ( max-width: 1024.98px )
+				padding: 3rem 0
+			@media screen and ( max-width: 576px )
+				padding: 3rem 0
+			.col-xl-6
+				&:nth-child(2n+1)
+					order: 2
+					display: flex
+					flex-direction: column
+					justify-content: center
+					.big-item
+						padding-right: 12rem
+					@media screen and ( max-width: 1024.98px )
+						.big-item
+							padding-right: 0
+					@media screen and ( max-width: 1023.98px )
+						align-items: center
+						.big-item
+							padding-right: 0
+						.big-item
+							padding: 0 10rem
+					@media screen and ( max-width: 576px )
+						.big-item
+							padding: 0
+				&:nth-child(2n)
+					@media screen and ( max-width: 1023.98px )
+						padding-bottom: 3rem
+						padding-top: 10rem
+						display: flex
+						justify-content: center
+
+		.block_content
+			h3
+				font-size: 3rem
+				color: #185ece
+				font-weight: 700
+			.content
+				list-style: none
+				li
+					position: relative
+					padding-left: 2.5rem
+					&:before
+						content: "\eb80"
+						font-family: 'remixicon'
+						color: #185ece
+						position: absolute
+						top: 0
+						left: 0
+						font-size: 1.6rem
+						@media screen and ( max-width: 576px )
+							top: 3px
+		.background
+			position: relative
+			.img 
+				position: absolute
+				top: -3rem
+				left: -4rem
+				pointer-events: none
+				user-select: none
+				img
+					width: auto
+					@media screen and ( max-width: 1199px )
+						width: 440px
+					@media screen and ( max-width: 1024.98px )
+						width: 400px
+					@media screen and ( max-width: 576px )
+						width: 400px
+			.phone
+				position: absolute
+				top: -6rem
+				left: 25rem
+				pointer-events: none
+				user-select: none
+				z-index: 2
+				width: 30rem
+				@media screen and ( max-width: 1024.98px )
+					width: 25rem
+					left: 20rem
+				img
+					width: 100%
+			.media
+				position: absolute
+				pointer-events: auto
+				user-select: auto
+				top: 48%
+				left: -30rem
+				z-index: 5
+				img
+					width: 100%
+				@media screen and ( max-width: 1024.98px )
+					left: -25rem
+					// img
+					// 	width: 0%
+				@media screen and ( max-width: 576px )
+					left: -2.5rem
+					img
+						width: 70%
+			// .media
+			// 	position: absolute
+			// 	pointer-events: auto
+			// 	user-select: auto
+			// 	top: 50%
+			// 	right: -15rem
+			// 	transform: translate(-50%,-50%)
+			// 	z-index: 5
+			// 	img
+			// 		width: 100%
+			// 	@media screen and ( max-width: 765px )
+			// 		right: -20rem
+			// 		img
+			// 			width: 70%
+			// 	@media screen and ( max-width: 576px )
+			// 		right: 0
+		.block_img
+			width: 48rem
+			height: 48rem
+			border-radius: 50%
+			overflow: hidden
+			margin-top: 3rem
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				background-image: url("../img/app/bg-big-img.png")
+				background-position: top
+				background-repeat: no-repeat
+				background-size: cover
+			@media screen and ( max-width: 1024.98px )
+				width: 40rem
+				height: 40rem
+			img
+				width: 100%
+				height: 100%
+				object-fit: contain
+
+// section 3
+.block_feature-3
+	background-image: url("../img/feature/bg-2.png")
+	background-position: bottom
+	padding: 10rem 0
+	@media screen and ( max-width: 576px )
+		padding: 0 0 5rem 0
+	.row
+		&:nth-child(2n+1)
+			.col-lg-6
+				&:nth-child(2n+1)
+					display: flex
+					flex-direction: column
+					justify-content: center
+					order: 2
+					.big-item
+						padding-left: 12rem
+					@media screen and ( max-width: 1024.98px )
+						.big-item
+							padding-left: 0
+					@media screen and ( max-width: 1023.98px )
+						align-items: left
+						.block-title
+							padding-left: 0
+						.big-item
+							padding: 0 10rem
+					@media screen and ( max-width: 576px )
+						.big-item
+							padding: 0
+				&:nth-child(2n)
+					display: flex
+					justify-content: center
+					margin-left: -12rem
+					@media screen and ( max-width: 1024.98px )
+						margin-left: 0
+					@media screen and ( max-width: 1023.98px )
+						padding-top: 10rem
+						margin-left: 0
+					@media screen and ( max-width: 576px )
+						margin-left: 0
+						padding-bottom: 3rem
+		&:nth-child(2n)
+			@media screen and ( max-width: 1024.98px )
+				padding: 3rem 0
+			.col-lg-6
+				&:nth-child(2n+1)
+					display: flex
+					flex-direction: column
+					justify-content: center
+					.big-item
+						padding-left: 12rem
+					@media screen and ( max-width: 1024.98px )
+						.big-item
+							padding-left: 0
+					@media screen and ( max-width: 1023.98px )
+						align-items: center
+						order: 1
+						.big-item
+							padding-right: 0
+						.big-item
+							padding: 0 10rem
+					@media screen and ( max-width: 576px )
+						order: 1
+						.big-item
+							padding: 0
+						
+				&:nth-child(2n)
+					.item-img
+						margin-left: 12rem
+					@media screen and ( max-width: 1024.98px )
+						.item-img
+							margin-left: 0
+					@media screen and ( max-width: 1023.98px )
+						padding-top: 10rem
+						display: flex
+						justify-content: center
+					@media screen and ( max-width: 576px )
+						.item-img
+							margin-left: 0
+							padding-top: 5rem
+							padding-bottom: 3rem
+
+		.block_content
+			h3
+				font-size: 3rem
+				color: #185ece
+				font-weight: 700
+			.content
+				list-style: none
+				li
+					position: relative
+					padding-left: 2.5rem
+					&:before
+						content: "\eb80"
+						font-family: 'remixicon'
+						color: #185ece
+						position: absolute
+						top: 0
+						left: 0
+						font-size: 1.6rem
+						@media screen and ( max-width: 576px )
+							top: 3px
+		.background
+			position: relative
+			.img 
+				position: absolute
+				top: -3rem
+				left: -4rem
+				pointer-events: none
+				user-select: none
+				img
+					width: auto
+					@media screen and ( max-width: 1199px )
+						width: 440px
+					@media screen and ( max-width: 1024.98px )
+						width: 400px
+					@media screen and ( max-width: 576px )
+						width: 400px
+			.phone
+				position: absolute
+				top: -6rem
+				left: 25rem
+				pointer-events: none
+				user-select: none
+				z-index: 2
+				width: 30rem
+				@media screen and ( max-width: 1024.98px )
+					width: 25rem
+					left: 20rem
+				img
+					width: 100%
+			.media
+				position: absolute
+				pointer-events: auto
+				user-select: auto
+				top: 48%
+				left: -30rem
+				z-index: 5
+				img
+					width: 100%
+				@media screen and ( max-width: 1024.98px )
+					left: -25rem
+					// img
+					// 	width: 0%
+				@media screen and ( max-width: 576px )
+					left: -2.5rem
+					img
+						width: 70%
+			// .media
+			// 	position: absolute
+			// 	pointer-events: auto
+			// 	user-select: auto
+			// 	top: 50%
+			// 	right: -15rem
+			// 	transform: translate(-50%,-50%)
+			// 	z-index: 5
+			// 	img
+			// 		width: 100%
+			// 	@media screen and ( max-width: 765px )
+			// 		right: -20rem
+			// 		img
+			// 			width: 70%
+			// 	@media screen and ( max-width: 576px )
+			// 		right: 0
+		.block_img
+			width: 48rem
+			height: 48rem
+			border-radius: 50%
+			overflow: hidden
+			margin-top: 3rem
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				background-image: url("../img/app/bg-big-img.png")
+				background-position: top
+				background-repeat: no-repeat
+				background-size: cover
+			@media screen and ( max-width: 1024.98px )
+				width: 40rem
+				height: 40rem
+			img
+				width: 100%
+				height: 100%
+				object-fit: contain
+
+// section 4
+.block_feature-4
+	background-image: url("../img/feature/bg-3.png")
+	background-position: center
+	padding: 10rem 0
+	.row
+		&:nth-child(2n+1)
+			.col-lg-6
+				&:nth-child(2n+1)
+					display: flex
+					flex-direction: column
+					justify-content: center
+					.big-item
+						padding-left: 12rem
+					@media screen and ( max-width: 1024.98px )
+						.big-item
+							padding-left: 0
+					@media screen and ( max-width: 1023.98px )
+						align-items: left
+						order: 1
+						.block-title
+							padding-left: 0
+						.big-item
+							padding: 0 10rem
+					@media screen and ( max-width: 576px )
+						.big-item
+							padding: 0
+				&:nth-child(2n)
+					display: flex
+					justify-content: center
+					@media screen and ( max-width: 1023.98px )
+						padding-top: 5rem
+						padding-bottom: 3rem
+		&:nth-child(2n)
+			@media screen and ( max-width: 1024.98px )
+				padding: 3rem 0
+			@media screen and ( max-width: 576px )
+				padding: 8rem 0
+			.col-lg-6
+				&:nth-child(2n+1)
+					display: flex
+					flex-direction: column
+					justify-content: center
+					order: 2
+					.big-item
+						padding-right: 12rem
+					@media screen and ( max-width: 1024.98px )
+						.big-item
+							padding-right: 0
+					@media screen and ( max-width: 1023.98px )
+						align-items: left
+						.big-item
+							padding-right: 0
+						.big-item
+							padding: 0 10rem
+					@media screen and ( max-width: 576px )
+						.big-item
+							padding: 0
+				&:nth-child(2n)
+					@media screen and ( max-width: 1023.98px )
+						padding-top: 5rem
+						padding-bottom: 3rem
+						display: flex
+						justify-content: center
+
+		.block_content
+			h3
+				font-size: 3rem
+				color: #185ece
+				font-weight: 700
+			.content
+				list-style: none
+				li
+					position: relative
+					padding-left: 2.5rem
+					&:before
+						content: "\eb80"
+						font-family: 'remixicon'
+						color: #185ece
+						position: absolute
+						top: 0
+						left: 0
+						font-size: 1.6rem
+						@media screen and ( max-width: 576px )
+							top: 3px
+		.background
+			position: relative
+			.img 
+				position: absolute
+				top: -3rem
+				left: -4rem
+				pointer-events: none
+				user-select: none
+				img
+					width: auto
+					@media screen and ( max-width: 1199px )
+						width: 440px
+					@media screen and ( max-width: 1024.98px )
+						width: 400px
+					@media screen and ( max-width: 576px )
+						width: 400px
+			.phone
+				position: absolute
+				top: -6rem
+				left: 25rem
+				pointer-events: none
+				user-select: none
+				z-index: 2
+				width: 30rem
+				@media screen and ( max-width: 1024.98px )
+					width: 25rem
+					left: 20rem
+				img
+					width: 100%
+			.media
+				position: absolute
+				pointer-events: auto
+				user-select: auto
+				top: 48%
+				left: -30rem
+				z-index: 5
+				img
+					width: 100%
+				@media screen and ( max-width: 1024.98px )
+					left: -25rem
+					// img
+					// 	width: 0%
+				@media screen and ( max-width: 576px )
+					left: -2.5rem
+					img
+						width: 70%
+			// .media
+			// 	position: absolute
+			// 	pointer-events: auto
+			// 	user-select: auto
+			// 	top: 50%
+			// 	right: -15rem
+			// 	transform: translate(-50%,-50%)
+			// 	z-index: 5
+			// 	img
+			// 		width: 100%
+			// 	@media screen and ( max-width: 765px )
+			// 		right: -20rem
+			// 		img
+			// 			width: 70%
+			// 	@media screen and ( max-width: 576px )
+			// 		right: 0
+		.block_img
+			width: 48rem
+			height: 48rem
+			border-radius: 50%
+			overflow: hidden
+			margin-top: 3rem
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				background-image: url("../img/app/bg-big-img.png")
+				background-position: top
+				background-repeat: no-repeat
+				background-size: cover
+			@media screen and ( max-width: 1024.98px )
+				width: 40rem
+				height: 40rem
+			img
+				width: 100%
+				height: 100%
+				object-fit: contain
