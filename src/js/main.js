@@ -2,6 +2,7 @@ $(document).ready(function() {
     // DataBG();
     toggleClass();
     mappingMenu();
+    linkAbout();
 });
 
 
@@ -26,6 +27,26 @@ function mappingMenu() {
         desktopMethod: "appendTo",
         breakpoint: 1281
     }).watch();
+}
+
+function linkAbout() {
+    $(".link-to-about-section a").on("click", function(event) {
+        if (this.hash !== "") {
+            let offset = $("header").outerHeight() + 50;
+            var hash = this.hash;
+            $(".link-to-about-section a").removeClass('active')
+            $(this).addClass('active')
+
+            $("html, body").animate({
+                    scrollTop: $(hash).offset().top - offset,
+                },
+                800,
+                function() {
+                    window.location.hash = hash;
+                }
+            );
+        } // End if
+    });
 }
 
 $('.collapse').click(function(e) {
