@@ -1,0 +1,246 @@
+section.block_trial
+	padding: 5rem 0
+	@media screen and ( max-width: 576px )
+		padding: 2rem 0
+	.block_trial-title
+		.title
+			h2
+				font-size: 4.8rem
+				color: #111111
+				flex-wrap: 700
+				text-align: center
+				@media screen and ( max-width: 576px )
+					line-height: 1.2
+					padding-bottom: 1rem
+		.content
+			p
+				font-size: 1.8rem
+				color: #111111
+				font-weight: 500
+				text-align: center
+				position: relative
+				padding-bottom: 5rem
+	.col-lg-4
+		&:nth-child(2)
+			.block_card-trial
+				&::before
+					background-color: #f9a739
+		&:nth-child(3)
+			.block_card-trial
+				&::before
+					background-color: #00c56a
+	.block_card-trial
+		padding: 2rem 4rem
+		border-radius: 8px
+		box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.1)
+		margin-bottom: 3rem
+		transition: 0.2s all
+		position: relative
+		overflow: hidden
+		&::before
+			content: ''
+			position: absolute
+			width: 120%
+			height: 30rem
+			top: -16.5rem
+			left: -15%
+			z-index: -1
+			border-radius: 0% 0% 30% 69% / 0% 29% 20% 47%
+			background-color: #185ece
+		&:hover
+			transform: scale(1.05)
+		.card_header
+			display: flex
+			justify-content: space-between
+			align-items: center
+			.title
+				font-size: 2rem
+				font-weight: 800
+				text-transform: uppercase
+				color: #fff
+			.price
+				font-size: 5.4rem
+				font-weight: 700
+				line-height: 1.1
+				color: #fff
+				display: flex
+				flex-direction: column
+				align-items: center
+				span
+					font-size: 1.4rem
+					font-weight: 400
+					color: #fff
+		.card_header-content
+			font-size: 1.6rem
+			padding: 2rem 0
+			padding-top: 5rem
+			border-bottom: 1px solid #f0f0f0
+		.card_body
+			.title
+				font-size: 1.8rem
+				font-weight: 700
+				color: #999999
+				padding-top: 2rem
+				text-transform: uppercase
+			.block_content
+				height: 240px
+				overflow: hidden
+				@media screen and ( max-width: 576px )
+					height: 225px
+				h3
+					font-size: 3rem
+					color: #185ece
+					font-weight: 700
+				.content
+					list-style: none
+					li
+						position: relative
+						padding-left: 2.5rem
+						margin: 1rem 0
+						&:before
+							content: "\eb80"
+							font-family: 'remixicon'
+							color: #185ece
+							position: absolute
+							top: 0
+							left: 0
+							font-size: 1.6rem
+							@media screen and ( max-width: 576px )
+								top: 3px
+			.regist
+				display: flex
+				@include center
+				background-color: #e7eefa
+				height: 5rem
+				margin-top: 1rem
+				color: #185ece
+				font-size: 1.6rem
+				text-transform: uppercase
+				font-weight: 500
+				border-radius: 8px
+				transition: 0.2s all
+				span
+					font-size: 2rem
+					padding-left: 1.5rem
+					color: #185ece
+				&:hover
+					background-color: #185ece
+					color: #e7eefa
+					span
+						color: #e7eefa
+section.block_contact
+	background-image: url("../img/trial/bg-contact.png")
+	background-position: top
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 10rem 0
+	@media screen and ( max-width: 576px )
+		padding: 5rem 0
+	.wrap-form
+		@media screen and ( max-width: 576px )
+			margin-bottom: 3rem
+		.form-group
+			margin-bottom: 1.5rem
+			position: relative
+			label
+				transition: all 0.2s ease-in-out
+				position: absolute
+				top: 50%
+				left: 3rem
+				transform: translate(0%,-50%)
+				background: none
+				color: #b3b3b3
+				font-weight: normal
+				cursor: text
+				pointer-events: none
+			input
+				width: 100%
+				border: 1px solid #e1e1e1
+				padding: 0 3rem
+				padding-top: 2.5rem
+				padding-bottom: 0.5rem
+				font-size: 1.6rem
+				font-weight: 700
+				height: 5rem
+				border-radius: 5px
+				&:focus ~ label
+					top: 25%
+					font-size: 1.4rem
+			select
+				width: 100%
+				height: 5rem
+				border: 1px solid #e1e1e1
+				padding: 0 3rem
+				border-radius: 5px
+			textarea
+				width: 100%
+				border: 1px solid #e1e1e1
+				padding: 3rem 3rem
+				border-radius: 5px
+				&:focus ~ .textarea
+					top: 2rem
+					font-size: 1.4rem
+				&::placeholder
+					color: #b3b3b3
+			.textarea
+				top: 4.5rem
+
+
+		.frm-btn
+			input
+				cursor: pointer
+				border: 0
+				border-radius: 5px
+				width: 22rem
+				height: 6rem
+				color: #fff
+				font-size: 18px
+				text-transform: uppercase
+				font-weight: 500
+				background-color: #185ece
+				transition: 0.2s all
+				&:hover
+					background-color: #e7eefa
+					color: #185ece
+
+	.background
+		position: relative
+		.img 
+			position: absolute
+			top: 0
+			left: -35px
+			pointer-events: none
+			img
+				width: auto
+				@media screen and ( max-width: 1199px )
+					width: 440px
+				@media screen and ( max-width: 1024.98px )
+					width: 440px
+				@media screen and ( max-width: 576px )
+					width: 400px
+	.block_img
+		width: 48rem
+		height: 48rem
+		border-radius: 50%
+		overflow: hidden
+		margin-top: 3rem
+		position: relative
+		@media screen and ( max-width: 1199px )
+			width: 42rem
+			height: 42rem
+		@media screen and ( max-width: 1024.98px )
+			width: 40rem
+			height: 40rem
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			background-image: url("../img/app/bg-big-img.png")
+			background-position: top
+			background-repeat: no-repeat
+			background-size: cover
+		img
+			width: 100%
+			height: 100%
+			object-fit: contain
