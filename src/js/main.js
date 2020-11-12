@@ -45,3 +45,34 @@ $('.collapse').click(function(e) {
         $this.next().slideToggle(250);
     }
 });
+
+$('.moreless-button').click(function () {
+    $(this).toggleClass("click");
+    $('.moreless-button').toggleClass("show");
+    $('.moretext').slideToggle();
+    if ($('.moreless-button').text() == "Xem thêm") {
+        $(this).text("Thu gọn")
+    } else {
+        $(this).text("Xem thêm")
+    }
+});
+$('.moreless-button-2').click(function () {
+    $(this).toggleClass("click");
+    $('.moreless-button-2').toggleClass("show");
+    $('.moretext-2').slideToggle();
+    if ($('.moreless-button-2').text() == "Xem thêm") {
+        $(this).text("Thu gọn")
+    } else {
+        $(this).text("Xem thêm")
+    }
+});
+$('.moreless-button-3').click(function () {
+    $(this).toggleClass("click");
+    $('.moreless-button-3').toggleClass("show");
+    $('.moretext-3').slideToggle();
+    if ($('.moreless-button-3').text() == "Xem thêm") {
+        $(this).text("Thu gọn")
+    } else {
+        $(this).text("Xem thêm")
+    }
+});
