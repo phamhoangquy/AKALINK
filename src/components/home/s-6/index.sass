@@ -1,0 +1,126 @@
+.block_s-6
+	padding: 85px 0 0 0
+	@media screen and ( max-width: 1024.98px )
+		padding: 40px 0 0 0
+	@media screen and ( max-width: 576px )
+		padding: 30px 0 0 0
+	.background
+		position: relative
+		.img 
+			position: absolute
+			top: 0
+			left: -35px
+			pointer-events: none
+			img
+				width: auto
+				@media screen and ( max-width: 1199px )
+					width: 440px
+				@media screen and ( max-width: 1024.98px )
+					width: 440px
+				@media screen and ( max-width: 576px )
+					width: 400px
+	.block-img
+		position: relative
+		width: 61.8em
+		height: 61.8em
+		font-size: 10px
+		@media screen and ( max-width: 1300px )
+			font-size: 8px
+		@media screen and ( max-width: 576px )
+			font-size: 5px
+		.big-img, .medium-img, .small-img
+			position: absolute
+			border-radius: 50%
+			overflow: hidden
+			img
+				width: 100%
+				height: 100%
+				object-fit: contain
+		.big-img
+			width: 45.8em
+			height: 45.8em
+			top: 6em
+			left: 16em
+			@media screen and ( max-width: 998.98px )
+				width: auto
+		.medium-img
+			width: 16.5em
+			height: 16.5em
+			top: 5.7em
+			left: 0
+		.small-img
+			width: 13.4em
+			height: 13.4em
+			left: 0
+			top: 23em
+
+	.block_collapse
+		width: 100%
+		
+		list-style: none
+		border-radius: 10px 10px 10px 10px
+		overflow: hidden
+		@media screen and ( max-width: 1280px )
+			width: 100%
+		@media screen and ( max-width: 576px )
+			padding: 0 0 3rem 0
+		li
+			margin-top: 3rem
+			
+			.collapse
+				width: 100%
+				height: 6rem
+				display: flex
+				align-items: center
+				justify-content: space-between
+				padding: 0 3rem
+				font-size: 1.2rem
+				background-color: #e7eefa
+				transition: 0.2s all
+				border-radius: 10px 10px 10px 10px
+				cursor: pointer
+				&:hover
+					color: #347227
+				a
+					color: #185ece
+					font-size: 2rem
+					font-weight: 500
+				i
+					color: #185ece
+					transition: 0.2s all
+					font-size: 3rem
+				&.click
+					background-color: #185ece
+					border-radius: 10px 10px 0 0
+					a
+						color: #fff
+					i
+						color: #fff
+						transform: rotate(180deg)
+				@media screen and ( max-width: 576px )
+					padding: 0 1.5rem
+			.collapse-inner
+				overflow: hidden
+				display: none
+				padding: 1rem 3rem 0 3rem
+				list-style: none
+				box-shadow: 0px 0px 8px #e4e4e4
+				border-radius: 5px;
+				background-color: rgb(255, 255, 255);
+
+
+				li
+					position: relative
+					padding: 0
+					padding-left: 25px
+					&:before
+						content: "\eb80"
+						font-family: 'remixicon'
+						color: #185ece
+						position: absolute
+						top: 0
+						left: 0
+						font-size: 1.6rem
+				p
+					margin: 10px 0
+					font-size: 1.6rem

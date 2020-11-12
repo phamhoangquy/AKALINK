@@ -1,0 +1,103 @@
+.block_s-1
+	padding: 80px 0
+	@media screen and ( max-width: 576px )
+		padding: 30px 0
+	.big-item
+		padding-right: 12rem
+		@media screen and ( max-width: 1024.98px )
+			padding-right: 0
+			padding-left: 10rem
+		@media screen and ( max-width: 767px )
+			padding-left: 2rem
+		@media screen and ( max-width: 576px )
+			padding-right: 0
+			padding-left: 0
+		.content
+			p
+				font-size: 18px
+				color: #333333
+		.btn-view
+			background: #185ece
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 215px
+			height: 60px
+			border-radius: 10px
+			margin-top: 25px
+			em
+				color: #ffffff
+				font-size: 24px
+				padding-right: 10px
+			a
+				color: #ffffff
+				font-size: 24px
+	.figure-image
+		height: auto
+		position: relative
+		@media screen and ( max-width: 576px )
+			padding-top: 30px
+		&.media-gallery
+			.caption
+				display: flex
+				flex-direction: column
+				.text
+					order: 1
+				.icon
+					height: 100%
+					width: 100%
+					order: 2
+					img
+						@apply block
+						margin: 0 auto
+	.wrapper
+		height: 100%
+		border-radius: 10px
+		a
+			display: block
+			height: 100%
+			img
+				max-width: 100%
+				height: 100%
+				width: 100%
+	.caption
+		z-index: 10
+		position: absolute
+		top: 65%
+		left: 5%
+		transform: translate(-50%,-50%)
+		width: 100%
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		pointer-events: none
+		padding: 0 30px
+		@media screen and ( max-width: 1024px)
+			padding: 0 15px
+			
+		.icon
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 65px
+			height: 65px
+			margin:  5px 0
+			@media screen and ( max-width: 1280px )
+				width: 46px
+				margin: 5px auto
+				height: 46px
+			@media screen and ( max-width: 576px )
+				width: 32px
+				margin: 5px auto
+				height: 32px
+			em
+				@apply text-white block mx-auto text-40
+				height: 40px
+				line-height: 40px
+			img
+				max-width: 100%
+				height: auto
+				display: block
+				margin: 0 auto !important

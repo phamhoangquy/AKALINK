@@ -3,6 +3,7 @@ $(document).ready(function() {
     toggleClass();
     mappingMenu();
     linkAbout();
+    swiperInit();
 });
 
 
@@ -66,3 +67,19 @@ $('.collapse').click(function(e) {
         $this.next().slideToggle(250);
     }
 });
+
+function swiperInit() {
+    var homerSwiper = new Swiper(".home-banner .swiper-container", {
+        // Optional parameters
+        speed: 1205,
+        slidesPerView: 1,
+        autoplay: {
+            delay: 3000
+        },
+        pagination: {
+            el: ".home-banner-pagination",
+            type: "bullets",
+            clickable: "true"
+        }
+    });
+}
