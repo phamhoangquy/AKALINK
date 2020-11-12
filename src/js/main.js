@@ -4,6 +4,8 @@ $(document).ready(function() {
     mappingMenu();
     linkAbout();
     swiperInit();
+    sideNavigation();
+    sideNavigation2();
 });
 
 
@@ -82,4 +84,41 @@ function swiperInit() {
             clickable: "true"
         }
     });
+}
+
+function sideNavigation() {
+    let trigger = $('.side-navigation-wrapper .side-navigation .title em');
+    let close = $('.side-navigation-wrapper .side-navigation  .nav-sub');
+    let parent = $('.side-navigation-wrapper .side-navigation  li');
+    trigger.on('click', function(e) {
+        e.preventDefault();
+        if (!$(this).parent().parent().hasClass("open")) {
+            close.slideUp();
+            $(this).parent().next().slideToggle();
+            parent.removeClass('open')
+            $(this).parents('li').addClass('open')
+        } else {
+            $(this).parent().next().slideToggle();
+            parent.removeClass('open')
+        }
+    })
+
+}
+
+function sideNavigation2() {
+    let trigger = $('.side-navigation-wrapper .side-navigation .title-2 em');
+    let close = $('.side-navigation-wrapper .side-navigation  .nav-sub-2');
+    let parent = $('.side-navigation-wrapper .side-navigation  li');
+    trigger.on('click', function(e) {
+        e.preventDefault();
+        if (!$(this).parent().parent().hasClass("open")) {
+            close.slideUp();
+            $(this).parent().next().slideToggle();
+            parent.removeClass('open')
+            $(this).parents('li').addClass('open')
+        } else {
+            $(this).parent().next().slideToggle();
+            parent.removeClass('open')
+        }
+    })
 }

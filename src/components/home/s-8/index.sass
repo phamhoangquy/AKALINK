@@ -1,0 +1,116 @@
+.block_s-8
+	// background-image: url("../img/trial/bg-contact.png")
+	// background-position: top
+	// background-repeat: no-repeat
+	// background-size: cover
+	padding: 8.5rem 0
+	@media screen and ( max-width: 576px )
+		padding: 5rem 0
+	.wrap-form
+		@media screen and ( max-width: 576px )
+			margin-bottom: 3rem
+		.form-group
+			margin-bottom: 1.5rem
+			position: relative
+			label
+				transition: all 0.2s ease-in-out
+				position: absolute
+				top: 50%
+				left: 3rem
+				transform: translate(0%,-50%)
+				background: none
+				color: #b3b3b3
+				font-weight: normal
+				cursor: text
+				pointer-events: none
+			input
+				width: 100%
+				border: 1px solid #e1e1e1
+				padding: 0 3rem
+				padding-top: 2.5rem
+				padding-bottom: 0.5rem
+				font-size: 1.6rem
+				font-weight: 700
+				height: 5rem
+				border-radius: 5px
+				&:focus ~ label
+					top: 25%
+					font-size: 1.4rem
+			select
+				width: 100%
+				height: 5rem
+				border: 1px solid #e1e1e1
+				padding: 0 3rem
+				border-radius: 5px
+			textarea
+				width: 100%
+				border: 1px solid #e1e1e1
+				padding: 3rem 3rem
+				border-radius: 5px
+				&:focus ~ .textarea
+					top: 2rem
+					font-size: 1.4rem
+				&::placeholder
+					color: #b3b3b3
+			.textarea
+				top: 4.5rem
+
+
+		.frm-btn
+			input
+				cursor: pointer
+				border: 0
+				border-radius: 5px
+				width: 22rem
+				height: 6rem
+				color: #fff
+				font-size: 18px
+				text-transform: uppercase
+				font-weight: 500
+				background-color: #185ece
+				transition: 0.2s all
+				&:hover
+					background-color: #e7eefa
+					color: #185ece
+
+	.background
+		position: relative
+		.img 
+			position: absolute
+			top: 0
+			left: -35px
+			pointer-events: none
+			img
+				width: auto
+				@media screen and ( max-width: 1199px )
+					width: 440px
+				@media screen and ( max-width: 1024.98px )
+					width: 440px
+				@media screen and ( max-width: 576px )
+					width: 400px
+	.block_img
+		width: 48rem
+		height: 48rem
+		border-radius: 50%
+		overflow: hidden
+		margin-top: 3rem
+		position: relative
+		@media screen and ( max-width: 1199px )
+			width: 42rem
+			height: 42rem
+		@media screen and ( max-width: 1024.98px )
+			width: 40rem
+			height: 40rem
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			background-image: url("../img/app/bg-big-img.png")
+			background-position: top
+			background-repeat: no-repeat
+			background-size: cover
+		img
+			width: 100%
+			height: 100%
+			object-fit: contain
