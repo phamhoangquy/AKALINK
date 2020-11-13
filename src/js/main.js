@@ -83,6 +83,23 @@ function swiperInit() {
             clickable: "true"
         }
     });
+    var brandSwiper = new Swiper(".block_news-list .slide-news", {
+        // Optional parameters
+        speed: 1205,
+        slidesPerView: 1,
+        autoplay: {
+            delay: 3000
+        },
+        navigation: {
+            nextEl: '.block_news-list .nav-arrow-next',
+            prevEl: '.block_news-list .nav-arrow-prev',
+        },
+        pagination: {
+            el: ".news-pagination",
+            type: "bullets",
+            clickable: "true"
+        },
+    });
 }
 
 
