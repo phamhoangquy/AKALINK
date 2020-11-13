@@ -4,6 +4,7 @@ $(document).ready(function() {
     mappingMenu();
     linkAbout();
     swiperInit();
+    tabActive();
 });
 
 
@@ -116,3 +117,26 @@ $('.moreless-button-3').click(function() {
         $(this).text("Xem thêm")
     }
 });
+
+function tabActive() {
+    $(".tab-navigation li a").on("click", function() {
+        $(this)
+            .parents(".tab-navigation")
+            .find("li")
+            .removeClass("active");
+        $(this)
+            .parents("li")
+            .addClass("active");
+
+        var display = $(this).attr("data-type");
+        $(".tab-item").removeClass("active");
+        $("#" + display).addClass("active");
+
+        let maxHeight = 400;
+        let contentTab = $(".tab-wrapper .tab-item.active");
+        // console.log(contentTab.height())
+        if (contentTab.height() < maxHeight) {
+            $(contentTab).find('.btn-view-more').hide()
+        }
+    });
+}
