@@ -4,8 +4,6 @@ $(document).ready(function() {
     mappingMenu();
     linkAbout();
     swiperInit();
-    sideNavigation();
-    sideNavigation2();
 });
 
 
@@ -86,39 +84,35 @@ function swiperInit() {
     });
 }
 
-function sideNavigation() {
-    let trigger = $('.side-navigation-wrapper .side-navigation .title em');
-    let close = $('.side-navigation-wrapper .side-navigation  .nav-sub');
-    let parent = $('.side-navigation-wrapper .side-navigation  li');
-    trigger.on('click', function(e) {
-        e.preventDefault();
-        if (!$(this).parent().parent().hasClass("open")) {
-            close.slideUp();
-            $(this).parent().next().slideToggle();
-            parent.removeClass('open')
-            $(this).parents('li').addClass('open')
-        } else {
-            $(this).parent().next().slideToggle();
-            parent.removeClass('open')
-        }
-    })
 
-}
 
-function sideNavigation2() {
-    let trigger = $('.side-navigation-wrapper .side-navigation .title-2 em');
-    let close = $('.side-navigation-wrapper .side-navigation  .nav-sub-2');
-    let parent = $('.side-navigation-wrapper .side-navigation  li');
-    trigger.on('click', function(e) {
-        e.preventDefault();
-        if (!$(this).parent().parent().hasClass("open")) {
-            close.slideUp();
-            $(this).parent().next().slideToggle();
-            parent.removeClass('open')
-            $(this).parents('li').addClass('open')
-        } else {
-            $(this).parent().next().slideToggle();
-            parent.removeClass('open')
-        }
-    })
-}
+$('.moreless-button').click(function() {
+    $(this).toggleClass("click");
+    $('.moreless-button').toggleClass("show");
+    $('.moretext').slideToggle();
+    if ($('.moreless-button').text() == "Xem thêm") {
+        $(this).text("Thu gọn")
+    } else {
+        $(this).text("Xem thêm")
+    }
+});
+$('.moreless-button-2').click(function() {
+    $(this).toggleClass("click");
+    $('.moreless-button-2').toggleClass("show");
+    $('.moretext-2').slideToggle();
+    if ($('.moreless-button-2').text() == "Xem thêm") {
+        $(this).text("Thu gọn")
+    } else {
+        $(this).text("Xem thêm")
+    }
+});
+$('.moreless-button-3').click(function() {
+    $(this).toggleClass("click");
+    $('.moreless-button-3').toggleClass("show");
+    $('.moretext-3').slideToggle();
+    if ($('.moreless-button-3').text() == "Xem thêm") {
+        $(this).text("Thu gọn")
+    } else {
+        $(this).text("Xem thêm")
+    }
+});
