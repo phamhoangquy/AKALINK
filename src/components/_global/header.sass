@@ -1,10 +1,15 @@
 header
 	box-shadow: 0px 10px 20px 0px rgba(7, 34, 56, 0.05)
+	position: fixed
+	width: 100%
+	background: #ffffff
+	z-index: 99
 	.header
 		display: flex
 		justify-content: space-between
 		align-items: center
 		height: 80px
+		
 		@media screen and ( max-width: 1280px )
 			height: 60px
 		.block_left
@@ -27,6 +32,7 @@ header
 					display: flex
 					align-items: center
 					cursor: pointer
+					padding-top: 3px
 					i
 						font-size: 1.8rem
 						color: #111111
@@ -109,10 +115,13 @@ header
 			.btn-trial
 				width: 20rem
 				height: 4rem
-				border-radius: 10px
+				border-radius: 5px
 				background-color: #185ece
+				letter-spacing: 1px
 				@include center
 				transition: 0.2s all
+				@media screen and ( max-width: 1024.98px )
+					height: 34px
 				i
 					padding-right: 10px
 					font-size: 1.8rem
@@ -168,6 +177,11 @@ header
 					height: 1.5px
 					transition: all .2s
 				&:hover
+					color: #185ece
+					&:after
+						width: 100%
+			&.active
+				a
 					color: #185ece
 					&:after
 						width: 100%

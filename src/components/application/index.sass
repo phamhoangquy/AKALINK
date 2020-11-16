@@ -1,5 +1,7 @@
 .block_application-app
 	padding: 10rem 0
+	@media screen and ( max-width: 576px )
+		padding: 5rem 0 0 0
 	.background
 		position: relative
 		.img 
@@ -55,10 +57,11 @@
 		list-style: none
 		border-radius: 10px 10px 10px 10px
 		overflow: hidden
+		margin-top: 30px
 		@media screen and ( max-width: 1280px )
 			width: 100%
-		@media screen and ( max-width: 576px )
-			padding: 0 0 3rem 0
+		// @media screen and ( max-width: 576px )
+		// 	padding: 0 0 3rem 0
 		li
 			margin-bottom: 30px
 			.collapse
@@ -74,6 +77,8 @@
 				padding: 5px 25px
 				&:hover
 					color: #347227
+				&:active
+					background-color: #e7eefa
 				a
 					color: #185ece
 					font-size: 2rem
@@ -179,6 +184,7 @@
 			li
 				position: relative
 				padding-left: 2.5rem
+				padding-bottom: 10px
 				&:before
 					content: "\eb80"
 					font-family: 'remixicon'
@@ -251,6 +257,10 @@
 
 .application-page
 	.block_head-menu
+		position: sticky
+		z-index: 99
+		top: 76px
 		.head-menu-zone
 			display: flex
+			align-items: center
 			justify-content: center
