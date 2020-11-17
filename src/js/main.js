@@ -53,19 +53,18 @@ function linkAbout() {
 
 $('.collapse').click(function(e) {
     e.preventDefault();
-    $(this).removeClass('click');
-    $('.block_collapse').toggleClass("show");
+    $('.collapse').removeClass('click');
 
     var $this = $(this);
     if ($this.next().hasClass('show')) {
         $this.next().removeClass('show');
-        $this.next().slideUp(250);
+        $this.next().slideUp(350);
     } else {
         $this.parent().parent().find('li .collapse-inner').removeClass('show');
-        $this.parent().parent().find('li .collapse-inner').slideUp(250);
+        $this.parent().parent().find('li .collapse-inner').slideUp(350);
         $this.toggleClass('click');
         $this.next().toggleClass('show');
-        $this.next().slideToggle(250);
+        $this.next().slideToggle(350);
     }
 });
 
