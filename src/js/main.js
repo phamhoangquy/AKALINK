@@ -32,23 +32,17 @@ function mappingMenu() {
 }
 
 function linkAbout() {
-    $(".link-to-about-section a").on("click", function(event) {
-        if (this.hash !== "") {
-            let offset = $("header").outerHeight() + 50;
-            var hash = this.hash;
-            $(".link-to-about-section a").removeClass('active')
-            $(this).addClass('active')
-
-            $("html, body").animate({
-                    scrollTop: $(hash).offset().top - offset,
-                },
-                800,
-                function() {
-                    window.location.hash = hash;
-                }
-            );
-        } // End if
-    });
+    let elemHeader = $('header').outerHeight();
+    let menuStiky = $('.block_feature-header').outerHeight();
+    let elemLink = $('.block_feature-first li a');
+    elemLink.on('click', function(e) {
+        e.preventDefault();
+        var hash = this.hash;
+        console.log(hash);
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top - (elemHeader + menuStiky)
+        }, 0);
+    })
 }
 
 $('.collapse').click(function(e) {
