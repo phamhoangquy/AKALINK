@@ -35,7 +35,7 @@ function mappingMenu() {
 function linkAbout() {
     let elemHeader = $('header').outerHeight();
     let menuStiky = $('.block_feature-header').outerHeight();
-    let elemLink = $('.block_feature-first li a');
+    let elemLink = $('.block_feature-first a');
     elemLink.on('click', function(e) {
         e.preventDefault();
         var hash = this.hash;
@@ -112,6 +112,42 @@ function swiperInit() {
             el: ".news-pagination",
             type: "bullets",
             clickable: "true"
+        },
+    });
+    var brandSwiper = new Swiper(".block_feature-header .swiper-container", {
+        // Optional parameters
+        speed: 1000,
+        spaceBetween: 10,
+        autoplay: {
+            delay: 2000,
+        },
+        navigation: {
+            nextEl: ".block_feature-header .nav-arrow-prev",
+            prevEl: ".block_feature-header .nav-arrow-next",
+        },
+        breakpointsInverse: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+            },
+            400: {
+                slidesPerView: 2,
+            },
+            480: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 4,
+            },
+            1025: {
+                slidesPerView: 7,
+            },
+            1440: {
+                slidesPerView: 8,
+            },
+            1600: {
+                slidesPerView: 9,
+            },
         },
     });
 }
