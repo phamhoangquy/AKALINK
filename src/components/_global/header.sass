@@ -9,7 +9,6 @@ header
 		justify-content: space-between
 		align-items: center
 		height: 80px
-		
 		@media screen and ( max-width: 1280px )
 			height: 65px
 		.block_left
@@ -192,9 +191,8 @@ header
 			height: unset
 			li
 				padding: 10px 0
-				text-align: center
 	.menu_mobile
-		width: 70%
+		width: 35%
 		height: 100%
 		background-color: #fefefe
 		position: fixed
@@ -224,11 +222,13 @@ header
 		.mobile-wrapper
 			display: flex
 			flex-direction: column
-			align-items: center
 			width: 100%
 			padding-top: 30px
-			// height: 100%
-			justify-content: center
+			.nav-menu
+				li
+					border-bottom: 1px solid #999999
+					&:last-child
+						border-bottom: 0
 	.menu_mobile.show
 		opacity: 1
 		pointer-events: auto

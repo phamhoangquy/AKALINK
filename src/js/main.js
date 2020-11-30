@@ -167,10 +167,10 @@ function swiperInit() {
                 slidesPerView: 2,
             },
             400: {
-                slidesPerView: 2,
+                slidesPerView: 3,
             },
             480: {
-                slidesPerView: 2,
+                slidesPerView: 3,
             },
             768: {
                 slidesPerView: 3,

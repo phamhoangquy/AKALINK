@@ -222,6 +222,10 @@
 				bottom: 90px
 				left: 20px
 				z-index: 1
+				@media screen and ( max-width: 1024.98px )
+					left: 40%
+				@media screen and ( max-width: 576px )
+					left: 40px
 				.title-slide
 					@media screen and ( max-width: 1024.98px )
 						text-align: center
@@ -230,31 +234,28 @@
 						color: #0a4e81
 						font-weight: 700
 						text-align: center
-						@media screen and ( max-width: 768px )
-							font-size: 16px
-						@media screen and ( max-width: 500px )
-							font-size: 28px
-					
-				
-
 	.swiper-pagination.news-pagination.swiper-pagination-clickable.swiper-pagination-bullets
 		bottom: 100px
 		left: 0
 		width: 100%
 		position: absolute
+		@media screen and ( max-width: 1024.98px )
+			left: 3%
 		@media screen and ( max-width: 576px )
 			bottom: 90px
+			left: 0
 	.swiper-pagination-bullet-active
 		background: #0a4e81
 	.icon-slide
 		position: absolute
 		z-index: 1
 		bottom: 40px
-		left: 40%
-		@media screen and ( max-width: 768px )
-			left: 33%
+		left: 50%
+		@media screen and ( max-width: 1024.98px )
+			left: 50%
 		@media screen and ( max-width: 500px )
-			left: 40%
+			left: 51%
+			transform: translate(-50%,-50%)
 		ul
 			list-style: none
 			padding: 0

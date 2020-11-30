@@ -90,6 +90,8 @@
 			transition: .3s all
 			.read-more-inner
 				padding: 4rem 3rem
+				@media screen and ( max-width: 576px )
+					padding: 3rem 2rem
 				.title
 					font-size: 2rem
 					color: #fff
@@ -105,3 +107,6 @@
 					display: -webkit-box
 					overflow: hidden
 					text-overflow: ellipsis
+					@media screen and ( max-width: 576px )
+						font-size: 1.4rem
+						font-weight: 300

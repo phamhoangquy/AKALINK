@@ -134,7 +134,7 @@
 						font-size: 1.6rem
 						@media screen and ( max-width: 576px )
 							top: 3px
-	.background
+	// .background
 		position: relative
 		.img 
 			position: absolute
@@ -187,7 +187,7 @@
 					width: 70%
 			@media screen and ( max-width: 576px )
 				right: 0
-	.block_img
+	// .block_img
 		width: 48rem
 		height: 48rem
 		border-radius: 50%
@@ -210,6 +210,75 @@
 			width: 100%
 			height: 100%
 			object-fit: contain
+	.figure-image
+		height: auto
+		position: relative
+		@media screen and ( max-width: 576px )
+			padding-top: 30px
+		&.media-gallery
+			.caption
+				display: flex
+				flex-direction: column
+				.text
+					order: 1
+				.icon
+					height: 100%
+					width: 100%
+					order: 2
+					img
+						@apply block
+						margin: 0 auto
+	.wrapper
+		height: 100%
+		border-radius: 10px
+		a
+			display: block
+			height: 100%
+			img
+				max-width: 100%
+				height: 100%
+				width: 100%
+	.caption
+		z-index: 10
+		position: absolute
+		top: 60%
+		left: 96%
+		transform: translate(-50%,-50%)
+		width: 100%
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		pointer-events: none
+		padding: 0 30px
+		@media screen and ( max-width: 1024px)
+			padding: 0 15px
+			
+		.icon
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 65px
+			height: 65px
+			margin:  5px 0
+			@media screen and ( max-width: 1280px )
+				width: 46px
+				margin: 5px auto
+				height: 46px
+			@media screen and ( max-width: 576px )
+				width: 32px
+				margin: 5px auto
+				height: 32px
+			em
+				@apply text-white block mx-auto text-40
+				height: 40px
+				line-height: 40px
+			img
+				max-width: 100%
+				height: auto
+				display: block
+				margin: 0 auto !important
 
 // section 2
 .block_feature-2
@@ -325,7 +394,7 @@
 					@media screen and ( max-width: 1024.98px )
 						width: 400px
 					@media screen and ( max-width: 576px )
-						width: 400px
+						width: 355px
 			.phone
 				position: absolute
 				top: -6rem
@@ -336,7 +405,7 @@
 				width: 30rem
 				@media screen and ( max-width: 1024.98px )
 					width: 25rem
-					left: 20rem
+					left: 16rem
 				img
 					width: 100%
 			.media
@@ -349,29 +418,13 @@
 				img
 					width: 100%
 				@media screen and ( max-width: 1024.98px )
-					left: -25rem
-					// img
-					// 	width: 0%
+					left: -18rem
+					width: 46px
+					height: 46px
 				@media screen and ( max-width: 576px )
-					left: -2.5rem
-					img
-						width: 70%
-			// .media
-			// 	position: absolute
-			// 	pointer-events: auto
-			// 	user-select: auto
-			// 	top: 50%
-			// 	right: -15rem
-			// 	transform: translate(-50%,-50%)
-			// 	z-index: 5
-			// 	img
-			// 		width: 100%
-			// 	@media screen and ( max-width: 765px )
-			// 		right: -20rem
-			// 		img
-			// 			width: 70%
-			// 	@media screen and ( max-width: 576px )
-			// 		right: 0
+					left: -18rem
+					width: 46px
+					height: 46px
 		.block_img
 			width: 48rem
 			height: 48rem
@@ -389,8 +442,8 @@
 				background-repeat: no-repeat
 				background-size: cover
 			@media screen and ( max-width: 1024.98px )
-				width: 40rem
-				height: 40rem
+				width: 37rem
+				height: 37rem
 			img
 				width: 100%
 				height: 100%
@@ -400,6 +453,8 @@
 .block_feature-3
 	background-image: url("../img/feature/bg-2.png")
 	background-position: bottom
+	background-repeat: no-repeat
+	background-size: cover
 	padding: 10rem 0
 	overflow: hidden
 	@media screen and ( max-width: 1024.98px )
@@ -521,7 +576,7 @@
 					@media screen and ( max-width: 1024.98px )
 						width: 400px
 					@media screen and ( max-width: 576px )
-						width: 400px
+						width: 355px
 			.phone
 				position: absolute
 				top: -6rem
@@ -532,7 +587,7 @@
 				width: 30rem
 				@media screen and ( max-width: 1024.98px )
 					width: 25rem
-					left: 20rem
+					left: 16rem
 				img
 					width: 100%
 			.media
@@ -585,8 +640,8 @@
 				background-repeat: no-repeat
 				background-size: cover
 			@media screen and ( max-width: 1024.98px )
-				width: 40rem
-				height: 40rem
+				width: 37rem
+				height: 37rem
 			img
 				width: 100%
 				height: 100%
@@ -595,11 +650,16 @@
 // section 4
 .block_feature-4
 	background-image: url("../img/feature/bg-3.png")
-	background-position: center
+	background-position: 50% 70px
+	background-repeat: no-repeat
+	background-size: cover
 	padding: 10rem 0
 	overflow: hidden
 	@media screen and ( max-width: 1024.98px )
 		padding: 4rem 0
+		background-position: 50% 10px
+	@media screen and ( max-width: 576px )
+		background-position: 50% 60px
 	.row
 		&:nth-child(2n+1)
 			.col-xl-6
@@ -702,7 +762,7 @@
 					@media screen and ( max-width: 1024.98px )
 						width: 400px
 					@media screen and ( max-width: 576px )
-						width: 400px
+						width: 355px
 			.phone
 				position: absolute
 				top: -6rem
@@ -713,7 +773,7 @@
 				width: 30rem
 				@media screen and ( max-width: 1024.98px )
 					width: 25rem
-					left: 20rem
+					left: 16rem
 				img
 					width: 100%
 			.media
@@ -727,28 +787,10 @@
 					width: 100%
 				@media screen and ( max-width: 1024.98px )
 					left: -25rem
-					// img
-					// 	width: 0%
 				@media screen and ( max-width: 576px )
 					left: -2.5rem
 					img
 						width: 70%
-			// .media
-			// 	position: absolute
-			// 	pointer-events: auto
-			// 	user-select: auto
-			// 	top: 50%
-			// 	right: -15rem
-			// 	transform: translate(-50%,-50%)
-			// 	z-index: 5
-			// 	img
-			// 		width: 100%
-			// 	@media screen and ( max-width: 765px )
-			// 		right: -20rem
-			// 		img
-			// 			width: 70%
-			// 	@media screen and ( max-width: 576px )
-			// 		right: 0
 		.block_img
 			width: 48rem
 			height: 48rem
@@ -766,8 +808,8 @@
 				background-repeat: no-repeat
 				background-size: cover
 			@media screen and ( max-width: 1024.98px )
-				width: 40rem
-				height: 40rem
+				width: 37rem
+				height: 37rem
 			img
 				width: 100%
 				height: 100%
