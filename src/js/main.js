@@ -150,6 +150,42 @@ function swiperInit() {
             },
         },
     });
+    var brandSwiper = new Swiper(".block_head-menu .swiper-container", {
+        // Optional parameters
+        speed: 1000,
+        spaceBetween: 5,
+        // autoplay: {
+        //     delay: 2000,
+        // },
+        navigation: {
+            nextEl: ".block_head-menu .nav-arrow-next",
+            prevEl: ".block_head-menu .nav-arrow-prev",
+        },
+        breakpointsInverse: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+            },
+            400: {
+                slidesPerView: 2,
+            },
+            480: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1025: {
+                slidesPerView: 3,
+            },
+            1440: {
+                slidesPerView: 3,
+            },
+            1600: {
+                slidesPerView: 3,
+            },
+        },
+    });
 }
 
 

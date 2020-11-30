@@ -16,51 +16,42 @@
 		.iteam-bannertop
 			position: absolute
 			top: 25%
-			left: 30px
+			left: 100px
 			z-index: 1
-			@media screen and ( max-width: 767px)
-				top: 45%
+			width: 600px
 			@media screen and ( max-width: 576px)
-				top: 64%
-			.caption-banner 
-				h2
-					font-size: 40px
+				position: inherit
+				padding: 20px
+				left: 0
+			.card_img
+				.img
+					img
+						width: 100%
+						object-fit: scale-down
+			.content_banner
+				h3
+					font-size: 3.6rem
 					color: #111111
-					padding-right: 31%
-					padding-left: 23%
-					@media screen and ( max-width: 1410px )
-						padding-left: 0
-					@media screen and ( max-width: 1199px )
-						padding-left: 0
-						padding-right: 48%
-						font-size: 2.8rem
-					@media screen and ( max-width: 767px)
-						font-size: 28px
-						padding-right: 50%
-						text-align: left
-					@media screen and ( max-width: 576px)
-						font-size: 21px
+					font-weight: 700
+					@media screen and ( max-width: 998.98px )
 						padding-right: 0
-						text-align: center
-			.text-banner
-				p 
-					font-size: 1.6rem
-					color: #111111
-					padding-right: 31%
-					padding-left: 23%
-					padding-top: 25px
-					@media screen and ( max-width: 1410px )
-						padding-left: 0
-					@media screen and ( max-width: 1199px )
-						padding-left: 0
-						padding-right: 45%
-					@media screen and ( max-width:767px )
-						font-size: 1.4rem
-						padding-right: 30%
-						padding-top: 10px
-						text-align: left
-					@media screen and ( max-width:576px )
-						font-size: 1.4rem
+					@media screen and ( max-width: 576px )
 						padding-right: 0
-						padding-top: 10px
-						text-align: center
+						font-size: 2.6rem
+				.desc_banner
+					list-style: none
+					padding: 1rem 0
+					li
+						position: relative
+						padding-left: 2.5rem
+						padding-bottom: 1rem
+						&:before
+							content: "\eb80"
+							font-family: 'remixicon'
+							color: #185ece
+							position: absolute
+							top: 0
+							left: 0
+							font-size: 1.6rem
+							@media screen and ( max-width: 576px )
+								top: 3px

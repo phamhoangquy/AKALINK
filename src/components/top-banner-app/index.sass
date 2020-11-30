@@ -1,5 +1,6 @@
 .block_top-banner-app
 	background: #f3f3f3
+	overflow: hidden
 	.bannertop-img
 		position: relative
 		.img
@@ -16,12 +17,13 @@
 		.iteam-bannertop
 			position: absolute
 			top: 25%
-			left: 30px
+			left: 100px
 			z-index: 1
-			@media screen and ( max-width: 767px)
-				top: 45%
+			width: 600px
 			@media screen and ( max-width: 576px)
-				top: 15%
+				position: inherit
+				padding: 20px
+				left: 0
 			
 			.card_img
 				.img
@@ -29,9 +31,6 @@
 						width: 100%
 						object-fit: scale-down
 			.content_banner
-				padding-left: 23%
-				@media screen and ( max-width:576px )
-					padding-left: 0
 				h3
 					font-size: 3.6rem
 					color: #111111
