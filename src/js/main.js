@@ -117,13 +117,13 @@ function swiperInit() {
     var brandSwiper = new Swiper(".block_feature-header .swiper-container", {
         // Optional parameters
         speed: 1000,
-        spaceBetween: 10,
-        autoplay: {
-            delay: 2000,
-        },
+        spaceBetween: 5,
+        // autoplay: {
+        //     delay: 2000,
+        // },
         navigation: {
-            nextEl: ".block_feature-header .nav-arrow-prev",
-            prevEl: ".block_feature-header .nav-arrow-next",
+            nextEl: ".block_feature-header .nav-arrow-next",
+            prevEl: ".block_feature-header .nav-arrow-prev",
         },
         breakpointsInverse: true,
         breakpoints: {
@@ -131,13 +131,13 @@ function swiperInit() {
                 slidesPerView: 2,
             },
             400: {
-                slidesPerView: 2,
-            },
-            480: {
                 slidesPerView: 3,
             },
-            768: {
+            480: {
                 slidesPerView: 4,
+            },
+            768: {
+                slidesPerView: 6,
             },
             1025: {
                 slidesPerView: 7,
