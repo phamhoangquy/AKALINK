@@ -329,6 +329,12 @@
 		@media screen and ( max-width: 1350px)
 			margin: 0 30px
 	.swiper-slide
+		width: 15rem
+		@media screen and ( max-width: 1024.98px)
+			width: auto
+			.head-menu-zone
+				width: 15rem
+				height: auto
 		.head-menu-zone
 			a
 				width: 15rem
@@ -342,9 +348,14 @@
 				margin: 0.4rem 0.2rem
 				@include center
 				transition: 0.2s all
-				&:hover
+				&.active
+					color: #ffffff
+					background-color: #185ece
+			&:hover
+				a
 					background-color: #185ece
 					color: #fff
-				&.active
+			&.active
+				a
 					background-color: #185ece
 					color: #fff
