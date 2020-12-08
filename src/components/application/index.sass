@@ -261,101 +261,11 @@
 	padding-bottom: 2rem
 
 .application-page
-	.row
-		display: flex
-		justify-content: center
-		align-items: center
 	.block_head-menu
 		position: sticky
-		z-index: 90
+		z-index: 99
 		top: 76px
-		.head-title-zone
-			display: flex
-			justify-content: center
-			align-items: center
-			@media screen and ( max-width: 576px )
-				justify-content: left
-	.scroll-app-swiper-wrapper
-		position: relative
-		padding: 0 20px
-	.nav-arrow-prev,.nav-arrow-next
-		position: absolute
-		width: 40px
-		height: 40px
-		top: 30%
-		display: flex
-		justify-content: center
-		align-items: center
-		transition: .3s all  ease-in-out
-	.nav-arrow-next
-		right: -60px
-		cursor: pointer
-		@media screen and ( max-width: 1600px )
-			right: -15px
-			top: 20%
-		@media screen and ( max-width: 1350px)
-			right: -15px
-			top: 20%
-		@media screen and ( max-width: 1024.98px )
-			right: -15px
-			top: 20%
-		@media screen and ( max-width: 767px)
-			right: -15px
-			top: 20%
-		@media screen and ( max-width: 576px)
-			right: -15px
-			top: 20%
-
-	.nav-arrow-prev
-		left: -60px
-		cursor: pointer
-		@media screen and ( max-width: 1600px )
-			left: -15px
-			top: 20%
-		@media screen and ( max-width: 1350px)
-			left: -15px
-			top: 20%
-		@media screen and ( max-width: 1024.98px )
-			left: -15px
-			top: 20%
-		@media screen and ( max-width: 767px)
-			left: -15px
-			top: 20%
-		@media screen and ( max-width: 576px)
-			left: -15px
-			top: 20%
-	.swiper-container
-		margin: 0
-		@media screen and ( max-width: 1350px)
-			margin: 0 30px
-	.swiper-slide
-		width: 15rem
-		@media screen and ( max-width: 1024.98px)
-			width: auto
-			.head-menu-zone
-				width: 15rem
-				height: auto
 		.head-menu-zone
-			a
-				width: 15rem
-				height: 7rem
-				padding: 2rem
-				font-size: 1.6rem
-				color: #185ece
-				background-color: #e7eefa
-				display: block
-				text-align: center
-				margin: 0.4rem 0.2rem
-				@include center
-				transition: 0.2s all
-				&.active
-					color: #ffffff
-					background-color: #185ece
-			&:hover
-				a
-					background-color: #185ece
-					color: #fff
-			&.active
-				a
-					background-color: #185ece
-					color: #fff
+			display: flex
+			align-items: center
+			justify-content: center
