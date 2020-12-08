@@ -1,7 +1,26 @@
 .block_application-app
 	padding: 10rem 0
+	padding-top: 15rem
+	position: relative
 	@media screen and ( max-width: 576px )
 		padding: 5rem 0 0 0
+		padding-top: 10rem
+	.block_head-menu
+		position: absolute
+		top: 0
+		display: flex
+		justify-content: center
+		width: 100%
+	.fixed
+		position: fixed
+		z-index: 5
+		top: 76px
+		a
+			font-size: 0 !important
+			height: 2rem !important
+			&:hover
+				font-size: 1.6rem !important
+				height: 5rem !important
 	.background
 		position: relative
 		.img 
@@ -232,7 +251,6 @@
 			width: 100%
 			height: 100%
 			object-fit: contain
-
 // section 2
 .block_remote-working
 	background-image: unset
@@ -259,13 +277,3 @@
 	display: flex
 	justify-content: center
 	padding-bottom: 2rem
-
-.application-page
-	.block_head-menu
-		position: sticky
-		z-index: 99
-		top: 76px
-		.head-menu-zone
-			display: flex
-			align-items: center
-			justify-content: center
