@@ -245,8 +245,6 @@ function swiperInit() {
     });
 }
 
-
-
 $('.moreless-button').click(function() {
     $(this).toggleClass("click");
     $('.moreless-button').toggleClass("show");
