@@ -1,3 +1,5 @@
+var SwiperNavFixed;
+
 $(document).ready(function() {
     // DataBG();
     toggleClass();
@@ -6,6 +8,7 @@ $(document).ready(function() {
     // linkScroll();
     swiperInit();
     tabActive();
+    scrollActive()
 });
 
 
@@ -80,12 +83,32 @@ $(window).scroll(function() {
     $(".check-scroll-section").each(function(i) {
         if ($(this).position().top - $("header").outerHeight() - 1 <= scrollDistance) {
             $(".block_feature-first a.active").removeClass("active")
-            $(".block_feature-first a").eq(i).addClass("active")
+            $(".block_feature-first a").eq(i).parents('.swiper-slide').addClass("active")
         }
     });
+
+    let swiperActive = $('.block_feature-header .swiper-wrapper .swiper-slide .block_feature-first a.active').index()
+    console.log(swiperActive);
 }).scroll();
 
 
+
+function scrollActive() {
+    // let scroll = $('.block_feature-first a');
+    // buttonPrev.on('click', function(e) {
+    //     e.preventDefault();
+    //     scroll.animate({
+    //         scrollLeft: "-=290px"
+    //     }, "slow");
+    // });
+    // buttonNext.on('click', function(e) {
+    //     e.preventDefault();
+    //     scroll.animate({
+    //         scrollLeft: "+=290px"
+    //     }, "slow");
+    // });
+
+}
 // $(window).scroll(function () {
 //     var windscroll = $(window).scrollTop();
 //     if (windscroll >= 100) {
@@ -171,8 +194,8 @@ function swiperInit() {
             clickable: "true"
         },
     });
-    var brandSwiper = new Swiper(".block_feature-header .swiper-container", {
-        // Optional parameters
+
+    SwiperNavFixed = new Swiper(".block_feature-header .swiper-container", {
         speed: 1000,
         spaceBetween: 5,
         // autoplay: {
@@ -204,42 +227,6 @@ function swiperInit() {
             },
             1600: {
                 slidesPerView: 9,
-            },
-        },
-    });
-    var brandSwiper = new Swiper(".block_head-menu .swiper-container", {
-        // Optional parameters
-        speed: 1000,
-        spaceBetween: 5,
-        // autoplay: {
-        //     delay: 2000,
-        // },
-        navigation: {
-            nextEl: ".block_head-menu .nav-arrow-next",
-            prevEl: ".block_head-menu .nav-arrow-prev",
-        },
-        breakpointsInverse: true,
-        breakpoints: {
-            320: {
-                slidesPerView: 2,
-            },
-            400: {
-                slidesPerView: 3,
-            },
-            480: {
-                slidesPerView: 3,
-            },
-            768: {
-                slidesPerView: 3,
-            },
-            1025: {
-                slidesPerView: 3,
-            },
-            1440: {
-                slidesPerView: 3,
-            },
-            1600: {
-                slidesPerView: 3,
             },
         },
     });
