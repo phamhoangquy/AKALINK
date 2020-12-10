@@ -1,5 +1,4 @@
 var SwiperNavFixed;
-
 $(document).ready(function() {
     // DataBG();
     toggleClass();
@@ -8,7 +7,7 @@ $(document).ready(function() {
     // linkScroll();
     swiperInit();
     tabActive();
-    scrollActive()
+    scrollActive();
 });
 
 
@@ -82,13 +81,14 @@ $(window).scroll(function() {
     var scrollDistance = $(window).scrollTop();
     $(".check-scroll-section").each(function(i) {
         if ($(this).position().top - $("header").outerHeight() - 1 <= scrollDistance) {
-            $(".block_feature-first a.active").removeClass("active")
+            $(".block_feature-first a.active").removeClass("active").parents('.swiper-slide').removeClass("active")
+            $(".block_feature-first a").removeClass("active").parents('.swiper-slide').removeClass("active")
             $(".block_feature-first a").eq(i).parents('.swiper-slide').addClass("active")
         }
     });
 
-    let swiperActive = $('.block_feature-header .swiper-wrapper .swiper-slide .block_feature-first a.active').index()
-    console.log(swiperActive);
+    let swiperActive = $('.block_feature-header .swiper-wrapper .swiper-slide.active').index()
+	SwiperNavFixed.slideTo(swiperActive, 1000, true);
 }).scroll();
 
 
