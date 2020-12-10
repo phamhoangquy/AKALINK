@@ -72,13 +72,25 @@
 					&:hover
 						background-color: #185ece
 						color: #fff
+					&.active
+						background-color: #185ece
+						color: #fff
 					@media screen and ( max-width: 1440px  )
 						font-size: 1.4rem
 				&.active
 					a
 						background-color: #185ece
 						color: #fff
-
+	.fixed
+		position: fixed
+		z-index: 5
+		top: 76px
+		a
+			font-size: 0 !important
+			height: 2rem !important
+			&:hover
+				font-size: 1.6rem !important
+				height: 5rem !important
 // section 1
 .block_feature-1
 	padding: 10rem 0
@@ -489,7 +501,7 @@
 				&:nth-child(2n)
 					display: flex
 					justify-content: center
-					margin-left: -12rem
+					margin-left: -5rem
 					@media screen and ( max-width: 1024.98px )
 						margin-left: 0
 					@media screen and ( max-width: 1024.98px )
