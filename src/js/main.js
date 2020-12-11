@@ -7,7 +7,6 @@ $(document).ready(function() {
     // linkScroll();
     swiperInit();
     tabActive();
-    scrollActive();
 });
 
 
@@ -51,6 +50,7 @@ function linkAbout() {
         }, 0);
     })
 }
+
 $(function() { createSticky($("#header")); });
 
 function createSticky(sticky) {
@@ -63,7 +63,6 @@ function createSticky(sticky) {
         win.on("scroll", function() {
             win.scrollTop() >= pos ? sticky.addClass("fixed") : sticky.removeClass("fixed");
         });
-
     }
 }
 
@@ -88,63 +87,11 @@ $(window).scroll(function() {
     });
 
     let swiperActive = $('.block_feature-header .swiper-wrapper .swiper-slide.active').index()
-	SwiperNavFixed.slideTo(swiperActive, 1000, true);
-}).scroll();
+    if ($('.feature-page').length > 0) {
+        SwiperNavFixed.slideTo(swiperActive, 1000, true);
+    }
+})
 
-
-
-function scrollActive() {
-    // let scroll = $('.block_feature-first a');
-    // buttonPrev.on('click', function(e) {
-    //     e.preventDefault();
-    //     scroll.animate({
-    //         scrollLeft: "-=290px"
-    //     }, "slow");
-    // });
-    // buttonNext.on('click', function(e) {
-    //     e.preventDefault();
-    //     scroll.animate({
-    //         scrollLeft: "+=290px"
-    //     }, "slow");
-    // });
-
-}
-// $(window).scroll(function () {
-//     var windscroll = $(window).scrollTop();
-//     if (windscroll >= 100) {
-//         $('section').each(function (i) {
-//             if ($(this).position().top <= windscroll + 100) {
-//                 $('.link-to-about-section li').removeClass('active');
-//                 $('.link-to-about-section li').eq(i).addClass('active');
-//             }
-//         });
-
-//     } else {
-
-//         $('.link-to-about-section li').removeClass('active');
-//         $('.link-to-about-section li:first').addClass('active');
-//     }
-
-// }).scroll();
-// function linkScroll() {
-//     $(".link-to-about-section a").on("click", function(event) {
-//         if (this.hash !== "") {
-//             let offset = $("header").outerHeight() + 50;
-//             var hash = this.hash;
-//             $(".link-to-about-section a").removeClass('active')
-//             $(this).addClass('active')
-
-//             $("html, body").animate({
-//                     scrollTop: $(hash).offset().top - offset,
-//                 },
-//                 800,
-//                 function() {
-//                     window.location.hash = hash;
-//                 }
-//             );
-//         } // End if
-//     });
-// }
 
 $('.collapse').click(function(e) {
     e.preventDefault();
